@@ -963,8 +963,7 @@ msgstr "未设定"
 
 #: src/components/Landing/index.tsx
 msgid "Note: Juicebox is new, unaudited, and not guaranteed to work perfectly. Before spending money, do your own research: <0>ask questions</0>, <1>check out the code</1>, and understand the risks!"
-msgstr "注意： Juicebox是一个全新的协议，它未经审计且不保证能完美工作。\n"
-" 在花钱之前请先做好您自己的研究：提出疑问，核查代码以及了解所涉及的风险！"
+msgstr "注意： Juicebox是一个全新的协议，它未经审计且不保证能完美工作。在花钱之前请先做好您自己的研究：提出疑问，核查代码以及了解所涉及的风险！"
 
 #: src/components/v1/V1Project/modals/ConfirmPayOwnerModal/index.tsx
 msgid "Notice from {0}:"
