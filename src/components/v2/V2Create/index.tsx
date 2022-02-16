@@ -10,6 +10,7 @@ import V2WarningBanner from './V2WarningBanner'
 import V2MainnetWarning from './V2MainnetWarning'
 import ProjectDetailsTabContent from './tabs/ProjectDetailsTabContent'
 import DeployProjectButton from './DeployProjectButton'
+import OthersTabContent from './tabs/OthersTabContent'
 
 const { TabPane } = Tabs
 
@@ -44,6 +45,7 @@ export default function V2Create() {
               </TabPane>
               <TabPane tab="4. Others" key="4">
                 {/* TODO */}
+                <OthersTabContent />
               </TabPane>
             </Tabs>
           </div>
