@@ -65,15 +65,11 @@ export default function ReconfigurationDrawer({
     initialSelectedStrategy,
   )
 
-  const [customStrategyAddress, setCustomStrategyAddress] = useState<string>(
-    constants.AddressZero,
-  )
+  const [customStrategyAddress, setCustomStrategyAddress] = useState<string>()
 
   const selectedStrategyIndex = ballotStrategies().findIndex(s => {
-    console.log('selectedStrat.add: ', selectedStrategy)
-    return s.address.toLowerCase() === selectedStrategy.address.toLowerCase()
+    return s.address.toLowerCase() === selectedStrategy.address?.toLowerCase()
   })
-  console.log('selectedIndex: ', selectedStrategyIndex)
 
   const drawerStyle: Partial<DrawerProps> = {
     placement: 'right',
@@ -109,13 +105,21 @@ export default function ReconfigurationDrawer({
           content={
             <CustomStrategyForm
               address={customStrategyAddress}
-              setAddress={setCustomStrategyAddress}
+              setAddress={(address: string) => {
+                setCustomStrategyAddress(address)
+                if (selectedStrategyIndex === -1) {
+                  // in case custom strategy isn't actually selected
+                  setSelectedStrategy(customStrategy(address))
+                }
+              }}
             />
           }
           index={-1}
           strategy={customStrategy(customStrategyAddress)}
-          selected={selectedStrategyIndex === 0}
-          onSelectBallot={(strategy: Strategy) => setSelectedStrategy(strategy)}
+          selected={selectedStrategyIndex === -1}
+          onSelectBallot={(strategy: Strategy) =>
+            setSelectedStrategy(customStrategy(customStrategyAddress))
+          }
         />
       </Space>
 
@@ -128,8 +132,8 @@ export default function ReconfigurationDrawer({
             (!customStrategyAddress || !utils.isAddress(customStrategyAddress)))
         }
         onClick={() => {
-          console.log('onsave: ', selectedStrategy.address)
           onSave(selectedStrategy)
+          setVisible(false)
         }}
       >
         <Trans>Save</Trans>

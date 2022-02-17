@@ -2,7 +2,10 @@ import { t } from '@lingui/macro'
 import { Form } from 'antd'
 import { useState } from 'react'
 
-import { ballotStrategies } from 'constants/ballotStrategies/ballotStrategies'
+import {
+  ballotStrategies,
+  Strategy,
+} from 'constants/ballotStrategies/ballotStrategies'
 import { getBallotStrategyByAddress } from 'constants/ballotStrategies/getBallotStrategiesByAddress'
 
 import ReconfigurationDrawer from '../ReconfigurationDrawer'
@@ -15,16 +18,13 @@ export default function ProjectReconfiguration({
   value: string
   onChange: (address: string) => void
 }) {
-  // const {
-  //   theme: { colors },
-  // } = useContext(ThemeContext)
+  const threeDayDelayStrategy = ballotStrategies()[2]
 
   const [drawerVisible, setDrawerVisible] = useState<boolean>(false)
 
-  // console.log('value: ', value)
-  const selectedStrategy = value
-    ? getBallotStrategyByAddress(value)
-    : ballotStrategies()[2]
+  const [selectedStrategy, setSelectedStrategy] = useState<Strategy>(
+    getBallotStrategyByAddress(value),
+  )
 
   return (
     <Form.Item
@@ -45,7 +45,10 @@ export default function ProjectReconfiguration({
         visible={drawerVisible}
         setVisible={setDrawerVisible}
         initialSelectedStrategy={selectedStrategy}
-        onSave={onChange}
+        onSave={(strategy: Strategy) => {
+          setSelectedStrategy(strategy)
+          onChange(strategy.address ?? threeDayDelayStrategy.address) //default to 3-day
+        }}
       />
     </Form.Item>
   )
