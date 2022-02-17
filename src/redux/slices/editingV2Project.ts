@@ -55,7 +55,7 @@ const defaultFundingCycleData: SerializedV2FundingCycleData =
 const defaultFundingCycleMetadata: SerializedV2FundingCycleMetadata =
   serializeV2FundingCycleMetadata({
     reservedRate: BigNumber.from(0),
-    redemptionRate: BigNumber.from(0),
+    redemptionRate: BigNumber.from(100),
     ballotRedemptionRate: BigNumber.from(0),
     pausePay: false,
     pauseDistributions: false,
@@ -123,6 +123,9 @@ export const editingV2ProjectSlice = createSlice({
     setReservedRate: (state, action: PayloadAction<string>) => {
       state.fundingCycleMetadata.reservedRate = action.payload
     },
+    setRedemptionRate: (state, action: PayloadAction<string>) => {
+      state.fundingCycleMetadata.redemptionRate = action.payload
+    },
     setFundAccessConstraints: (
       state,
       action: PayloadAction<SerializedV2FundAccessConstraint[]>,
@@ -131,6 +134,9 @@ export const editingV2ProjectSlice = createSlice({
     },
     setPayoutSplits: (state, action: PayloadAction<Split[]>) => {
       state.payoutSplits = action.payload
+    },
+    setReserveTokenSplits: (state, action: PayloadAction<Split[]>) => {
+      state.reserveTokenSplits = action.payload
     },
   },
 })

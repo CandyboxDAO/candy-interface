@@ -106,6 +106,8 @@ export default function ProjectBondingCurveRate({
     [calculator, graphCurve, value],
   )
 
+  console.log('render bC: ', value)
+
   return (
     <Form.Item
       name={name}
