@@ -2,13 +2,22 @@ import { t, Trans } from '@lingui/macro'
 import { Button, Form, Space } from 'antd'
 import { useForm } from 'antd/lib/form/Form'
 import { FormItems } from 'components/shared/formItems'
+import { ThemeContext } from 'contexts/themeContext'
 import { useAppDispatch } from 'hooks/AppDispatch'
 import { useAppSelector } from 'hooks/AppSelector'
 import { TicketMod } from 'models/mods'
-import { useCallback, useEffect, useState } from 'react'
+import {
+  CSSProperties,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from 'react'
 import { editingV2ProjectActions } from 'redux/slices/editingV2Project'
-// import { fromWad } from 'utils/formatNumber'
 import stripPercent from 'utils/stripPercent'
+import { SerializedV2FundAccessConstraint } from 'utils/v2/serializers'
+
+import { shadowCard } from 'constants/styles/shadowCard'
 
 export type TokenFormFields = {
   discountRate: string
@@ -18,32 +27,36 @@ export type TokenFormFields = {
 
 export default function TokenTabContent() {
   const [tokenForm] = useForm<TokenFormFields>()
+  const {
+    theme: { colors },
+  } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)
 
   const {
     fundingCycleMetadata,
     fundingCycleData,
+    fundAccessConstraints,
     reserveTokenSplits: reduxReserveTokenSplits,
   } = useAppSelector(state => state.editingV2Project)
 
   const reduxDiscountRate = fundingCycleData?.discountRate
   const reduxReservedRate = fundingCycleMetadata?.reservedRate
   const reduxRedemptionRate = fundingCycleMetadata?.redemptionRate
-  console.log('reduxRedemptionRate:', reduxRedemptionRate)
 
   const [reserveTokenSplits, setReserveTokenSplits] = useState<TicketMod[]>(
     reduxReserveTokenSplits ?? [],
   )
 
   const [discountRateDisabled, setDiscountRateDisabled] = useState<boolean>(
-    reduxDiscountRate === undefined || reduxDiscountRate === '0', // used == to include both string or number
+    reduxDiscountRate === undefined || reduxDiscountRate === '0',
   )
 
   const [reservedRateDisabled, setReservedRateDisabled] = useState<boolean>(
     reduxReservedRate === undefined || reduxReservedRate === '0',
   )
 
-  const [bondingCurveDisabled, setBondingCurveDisabled] = useState<boolean>(
-    reduxRedemptionRate === undefined || reduxRedemptionRate === '0',
+  const [redemptionRateDisabled, setRedemptionRateDisabled] = useState<boolean>(
+    reduxRedemptionRate === undefined || reduxRedemptionRate === '100',
   )
 
   // Using a state here because relying on the form does not
@@ -64,9 +77,9 @@ export default function TokenTabContent() {
 
   const resetTokenForm = useCallback(() => {
     tokenForm.setFieldsValue({
-      discountRate: stripPercent(reduxDiscountRate) ?? 0,
-      reservedRate: stripPercent(reduxReservedRate) ?? 0,
-      redemptionRate: stripPercent(reduxRedemptionRate) ?? 100,
+      discountRate: stripPercent(reduxDiscountRate) ?? '0',
+      reservedRate: stripPercent(reduxReservedRate) ?? '0',
+      redemptionRate: stripPercent(reduxRedemptionRate) ?? '100',
     })
     setReserveTokenSplits(reserveTokenSplits)
   }, [
@@ -77,10 +90,29 @@ export default function TokenTabContent() {
     tokenForm,
   ])
 
+  const disableTextStyle: CSSProperties = {
+    color: colors.text.primary,
+    fontStyle: 'italic',
+    fontWeight: 500,
+    marginBottom: 10,
+  }
+
   // initially fill form with any existing redux state
   useEffect(() => {
     resetTokenForm()
   }, [resetTokenForm])
+
+  // Assume the first item is the one of interest.
+  const fundAccessConstraint = fundAccessConstraints[0] as
+    | SerializedV2FundAccessConstraint
+    | undefined
+
+  const _hasFundingTarget = Boolean(
+    parseFloat(fundAccessConstraint?.distributionLimit ?? '0'),
+  )
+  const _hasFundingDuration = Boolean(
+    parseFloat(fundingCycleData?.duration ?? '0'),
+  )
 
   return (
     <div>
@@ -93,22 +125,6 @@ export default function TokenTabContent() {
           </Trans>
         </p>
         <Form form={tokenForm} layout="vertical">
-          <FormItems.ProjectDiscountRate
-            value={tokenForm.getFieldValue('discountRate') ?? reduxDiscountRate} // use redux if form hasn't loaded yet
-            name="discountRate"
-            onChange={val => {
-              tokenForm.setFieldsValue({ discountRate: val?.toString() })
-            }}
-            disabled={discountRateDisabled}
-            toggleDisabled={(checked: boolean) => {
-              if (!checked) {
-                tokenForm.setFieldsValue({ discountRate: '0' })
-              } else {
-                tokenForm.setFieldsValue({ discountRate: '10' })
-              }
-              setDiscountRateDisabled(!checked)
-            }}
-          />
           <FormItems.ProjectReserved
             value={tokenForm.getFieldValue('reservedRate') ?? reduxReservedRate}
             name="reservedRate"
@@ -116,6 +132,7 @@ export default function TokenTabContent() {
               setReservedRate(val)
               tokenForm.setFieldsValue({ reservedRate: val?.toString() })
             }}
+            style={{ ...shadowCard(theme), padding: 25 }}
             disabled={reservedRateDisabled}
             toggleDisabled={(checked: boolean) => {
               if (!checked) {
@@ -133,6 +150,7 @@ export default function TokenTabContent() {
               onModsChanged={(splits: TicketMod[]) => {
                 setReserveTokenSplits(splits)
               }}
+              style={{ ...shadowCard(theme), padding: 25 }}
               formItemProps={{
                 label: t`Reserved token allocation (optional)`,
                 extra: t`Allocate a portion of your project's reserved tokens to other Ethereum wallets or Juicebox projects.`,
@@ -140,23 +158,65 @@ export default function TokenTabContent() {
               reservedRate={reservedRate ?? 0}
             />
           ) : null}
+          <br />
+          {!_hasFundingDuration && (
+            <div style={{ ...disableTextStyle }}>
+              <Trans>
+                Discount rate disabled when funding cycle duration has not been
+                set.
+              </Trans>
+            </div>
+          )}
+          <FormItems.ProjectDiscountRate
+            value={tokenForm.getFieldValue('discountRate') ?? reduxDiscountRate} // use redux if form hasn't loaded yet
+            name="discountRate"
+            onChange={val => {
+              tokenForm.setFieldsValue({ discountRate: val?.toString() })
+            }}
+            style={{ ...shadowCard(theme), padding: 25 }}
+            disabled={discountRateDisabled}
+            toggleDisabled={
+              _hasFundingDuration
+                ? (checked: boolean) => {
+                    if (!checked) {
+                      tokenForm.setFieldsValue({ discountRate: '0' })
+                    } else {
+                      tokenForm.setFieldsValue({ discountRate: '10' })
+                    }
+                    setDiscountRateDisabled(!checked)
+                  }
+                : undefined
+            }
+          />
+          <br />
+          {!_hasFundingTarget && (
+            <div style={{ ...disableTextStyle }}>
+              <Trans>Redemption disabled while no funding target is set.</Trans>
+            </div>
+          )}
           <FormItems.ProjectBondingCurveRate
-            name="bondingCurveRate"
+            name="redemptionRate"
             value={
               tokenForm.getFieldValue('redemptionRate') ?? reduxRedemptionRate
             }
             onChange={(val?: number) =>
               tokenForm.setFieldsValue({ redemptionRate: val?.toString() })
             }
-            disabled={bondingCurveDisabled}
-            toggleDisabled={(checked: boolean) => {
-              if (checked) {
-                tokenForm.setFieldsValue({ redemptionRate: '0' })
-              } else {
-                tokenForm.setFieldsValue({ redemptionRate: '100' })
-              }
-              setBondingCurveDisabled(!checked)
-            }}
+            style={{ ...shadowCard(theme), padding: 25 }}
+            label={t`Redemption rate`}
+            disabled={redemptionRateDisabled}
+            toggleDisabled={
+              _hasFundingTarget
+                ? (checked: boolean) => {
+                    if (checked) {
+                      tokenForm.setFieldsValue({ redemptionRate: '0' })
+                    } else {
+                      tokenForm.setFieldsValue({ redemptionRate: '100' })
+                    }
+                    setRedemptionRateDisabled(!checked)
+                  }
+                : undefined
+            }
           />
           <Form.Item>
             <Button

@@ -1,8 +1,9 @@
 import { Form, Switch } from 'antd'
-import { Trans } from '@lingui/macro'
+import { t, Trans } from '@lingui/macro'
 
 import { ThemeContext } from 'contexts/themeContext'
-import {
+import React, {
+  CSSProperties,
   useCallback,
   useContext,
   useEffect,
@@ -18,12 +19,16 @@ export default function ProjectBondingCurveRate({
   name,
   hideLabel,
   value,
+  style,
+  label,
   formItemProps,
   onChange,
   disabled,
   toggleDisabled,
 }: {
   value: string | undefined
+  style?: CSSProperties
+  label?: string
   onChange: (val?: number) => void
   toggleDisabled?: (checked: boolean) => void
 } & FormItemExt) {
@@ -106,19 +111,27 @@ export default function ProjectBondingCurveRate({
     [calculator, graphCurve, value],
   )
 
-  console.log('render bC: ', value)
-
   return (
     <Form.Item
       name={name}
       label={
         hideLabel ? undefined : (
           <div>
-            <Trans>Bonding curve rate</Trans>{' '}
-            <Switch checked={!disabled} onChange={toggleDisabled} />
+            <span>{label ? label : t`Bonding curve rate`}</span>{' '}
+            {toggleDisabled ? (
+              <React.Fragment>
+                <Switch checked={!disabled} onChange={toggleDisabled} />{' '}
+                {disabled ? (
+                  <span style={{ color: colors.text.tertiary }}>
+                    <Trans>(100%)</Trans>
+                  </span>
+                ) : null}
+              </React.Fragment>
+            ) : null}
           </div>
         )
       }
+      style={style ? style : {}}
       extra={
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <BondingCurveGraph />

@@ -2,6 +2,7 @@ import { BigNumber, BigNumberish } from '@ethersproject/bignumber'
 
 import { constants } from 'ethers'
 import { V1FundingCycle, V1FundingCycleMetadata } from 'models/v1/fundingCycle'
+import { V2FundingCycleData } from 'models/v2/fundingCycle'
 
 import { getBallotStrategyByAddress } from 'constants/ballotStrategies/getBallotStrategiesByAddress'
 
@@ -85,7 +86,10 @@ export const hasFundingTarget = (
 ) => fundingCycle.target.lt(constants.MaxUint256)
 
 export const hasFundingDuration = (
-  fundingCycle: Pick<V1FundingCycle | EditingV1FundingCycle, 'duration'>,
+  fundingCycle: Pick<
+    V1FundingCycle | EditingV1FundingCycle | V2FundingCycleData,
+    'duration'
+  >,
 ) => fundingCycle.duration && !fundingCycle.duration.eq(constants.AddressZero)
 
 /**

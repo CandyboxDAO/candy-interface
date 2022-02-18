@@ -12,6 +12,7 @@ import {
   SerializedV2FundingCycleMetadata,
   SerializedV2FundAccessConstraint,
 } from 'utils/v2/serializers'
+import { parsePerbicent, parsePermille } from 'utils/formatNumber'
 
 export interface EditingV2ProjectState {
   version: number
@@ -33,6 +34,10 @@ export interface V2ProjectState {
   reserveTokenSplits: Split[]
 }
 
+const defaultDiscountRate = parsePermille(0)
+const defaultReservedRate = parsePermille(0)
+const defaultRedemptionRate = parsePerbicent(100)
+
 const defaultProjectMetadataState: ProjectMetadataV3 = {
   name: '',
   infoUri: '',
@@ -48,14 +53,14 @@ const defaultFundingCycleData: SerializedV2FundingCycleData =
   serializeV2FundingCycleData({
     duration: BigNumber.from(0),
     weight: BigNumber.from('1' + '0'.repeat(18)), // 1,000,000 of your project's tokens will be minted per ETH received
-    discountRate: BigNumber.from(0),
+    discountRate: defaultDiscountRate,
     ballot: constants.AddressZero,
   })
 
 const defaultFundingCycleMetadata: SerializedV2FundingCycleMetadata =
   serializeV2FundingCycleMetadata({
-    reservedRate: BigNumber.from(0),
-    redemptionRate: BigNumber.from(100),
+    reservedRate: defaultReservedRate,
+    redemptionRate: defaultRedemptionRate,
     ballotRedemptionRate: BigNumber.from(0),
     pausePay: false,
     pauseDistributions: false,
