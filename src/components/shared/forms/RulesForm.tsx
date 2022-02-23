@@ -129,7 +129,7 @@ export default function RulesForm({
                 that implements
               </Trans>{' '}
               <a
-                href="https://github.com/jbx-protocol/juice-contracts-v1/blob/05828d57e3a27580437fc258fe9041b2401fc044/contracts/FundingCycles.sol"
+                href="https://github.com/candyboxdao/candy-contracts-v1/blob/05828d57e3a27580437fc258fe9041b2401fc044/contracts/FundingCycles.sol"
                 target="_blank"
                 rel="noopener noreferrer"
               >

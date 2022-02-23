@@ -1,11 +1,11 @@
 import { ThemeContext } from 'contexts/themeContext'
-import { useJuiceTheme } from 'hooks/JuiceTheme'
+import { useCandyTheme } from 'hooks/CandyTheme'
 import { ChildElems } from 'models/child-elems'
 
 export default function ThemeProvider({ children }: { children: ChildElems }) {
-  const juiceTheme = useJuiceTheme()
+  const candyTheme = useCandyTheme()
 
   return (
-    <ThemeContext.Provider value={juiceTheme}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={candyTheme}>{children}</ThemeContext.Provider>
   )
 }

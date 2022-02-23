@@ -32,7 +32,7 @@ export default function BalancesModal({
 
   useEffect(() => {
     setEditingTokenRefs(
-      (metadata as ProjectMetadataV3)?.tokens ?? [{ type: 'erc20', value: '' }],
+      (metadata as ProjectMetadataV3)?.tokens ?? [{ type: 'bep20', value: '' }],
     )
   }, [metadata])
 
@@ -106,7 +106,7 @@ export default function BalancesModal({
             projectId={BigNumber.from('0x01')}
           />
           {(metadata as ProjectMetadataV3)?.tokens?.map(t =>
-            t.type === 'erc20' ? (
+            t.type === 'bep20' ? (
               <ERC20TokenBalance
                 key={t.value}
                 wallet={owner}
@@ -134,7 +134,7 @@ export default function BalancesModal({
         >
           <p style={{ marginBottom: 40 }}>
             <Trans>
-              Display ERC20 tokens and other Juicebox project tokens that are in
+              Display BEP20 tokens and other Candybox project tokens that are in
               this project's owner's wallet.
             </Trans>
           </p>

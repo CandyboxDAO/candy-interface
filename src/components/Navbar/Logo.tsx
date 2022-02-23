@@ -11,16 +11,16 @@ export default function Logo({ height }: { height?: number }) {
   }
 
   return (
-    <img
-      style={{ height }}
+    <img    
+      style={{ height, borderRadius:height / 2 }}      
       src={
         forThemeOption &&
         forThemeOption({
-          [ThemeOption.light]: '/assets/juice_logo-ol.png',
-          [ThemeOption.dark]: '/assets/juice_logo-od.png',
+          [ThemeOption.light]: '/assets/candy_logo-ol.png',
+          [ThemeOption.dark]: '/assets/candy_logo-od.png',
         })
       }
-      alt="Juicebox logo"
+      alt="Candybox logo"
     />
   )
 }

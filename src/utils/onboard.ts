@@ -3,7 +3,7 @@ import { Subscriptions } from 'bnc-onboard/dist/src/interfaces'
 
 import { readNetwork } from 'constants/networks'
 
-const appName = 'Juicebox'
+const appName = 'Candybox'
 const networkId = readNetwork.chainId
 const rpcUrl = readNetwork.rpcUrl
 const dappId = process.env.REACT_APP_BLOCKNATIVE_API_KEY
@@ -21,7 +21,7 @@ export function initOnboard(subscriptions: Subscriptions, darkMode: boolean) {
         { walletName: 'metamask' },
         {
           walletName: 'trezor',
-          appUrl: 'https://juicebox.money/#/',
+          appUrl: 'https://candybox.money/#/',
           email: 'me.jango@protonmail.com',
           rpcUrl,
         },

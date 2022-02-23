@@ -3,14 +3,14 @@ import { tokenSymbolText } from '../tokenSymbolText'
 describe('tokenSymbolText', () => {
   it.each`
     tokenSymbol  | capitalize | plural   | includeTokenWord | result
-    ${'JBX'}     | ${true}    | ${true}  | ${true}          | ${'JBX Tokens'}
-    ${'JBX'}     | ${true}    | ${true}  | ${false}         | ${'JBX'}
-    ${'JBX'}     | ${true}    | ${false} | ${true}          | ${'JBX Token'}
-    ${'JBX'}     | ${true}    | ${false} | ${false}         | ${'JBX'}
-    ${'JBX'}     | ${false}   | ${true}  | ${true}          | ${'JBX tokens'}
-    ${'JBX'}     | ${false}   | ${true}  | ${false}         | ${'JBX'}
-    ${'JBX'}     | ${false}   | ${false} | ${true}          | ${'JBX token'}
-    ${'JBX'}     | ${false}   | ${false} | ${false}         | ${'JBX'}
+    ${'CBX'}     | ${true}    | ${true}  | ${true}          | ${'CBX Tokens'}
+    ${'CBX'}     | ${true}    | ${true}  | ${false}         | ${'CBX'}
+    ${'CBX'}     | ${true}    | ${false} | ${true}          | ${'CBX Token'}
+    ${'CBX'}     | ${true}    | ${false} | ${false}         | ${'CBX'}
+    ${'CBX'}     | ${false}   | ${true}  | ${true}          | ${'CBX tokens'}
+    ${'CBX'}     | ${false}   | ${true}  | ${false}         | ${'CBX'}
+    ${'CBX'}     | ${false}   | ${false} | ${true}          | ${'CBX token'}
+    ${'CBX'}     | ${false}   | ${false} | ${false}         | ${'CBX'}
     ${undefined} | ${true}    | ${true}  | ${true}          | ${'Tokens'}
     ${undefined} | ${true}    | ${true}  | ${false}         | ${'Tokens'}
     ${undefined} | ${true}    | ${false} | ${true}          | ${'Token'}

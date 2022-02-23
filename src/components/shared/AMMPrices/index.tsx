@@ -1,5 +1,6 @@
-import { useUniswapPriceQuery } from 'hooks/ERC20UniswapPrice'
+// import { useUniswapPriceQuery } from 'hooks/ERC20UniswapPrice'
 import { useSushiswapPriceQuery } from 'hooks/ERC20SushiswapPrice'
+import { usePancakeswapPriceQuery } from 'hooks/ERC20PancakeswapPrice'
 import { CSSProperties } from 'react'
 
 import TokenAMMPriceRow from './TokenAMMPriceRow'
@@ -18,11 +19,17 @@ export default function AMMPrices({
   tokenAddress,
   style = {},
 }: Props) {
-  const { data: uniswapPriceData, isLoading: uniswapLoading } =
-    useUniswapPriceQuery({
-      tokenSymbol,
-      tokenAddress,
-    })
+  const { data: pancakeswapPriceData, isLoading: pancakeswapLoading } =
+  usePancakeswapPriceQuery({
+    tokenSymbol,
+    tokenAddress,
+  })
+
+  // const { data: uniswapPriceData, isLoading: uniswapLoading } =
+  //   useUniswapPriceQuery({
+  //     tokenSymbol,
+  //     tokenAddress,
+  //   })
 
   const { data: sushiswapPriceData, isLoading: sushiswapLoading } =
     useSushiswapPriceQuery({
@@ -33,17 +40,17 @@ export default function AMMPrices({
   return (
     <div style={{ ...style }}>
       <TokenAMMPriceRow
-        exchangeName="Uniswap"
+        exchangeName="Pancakeswap"
         tokenSymbol={tokenSymbol}
-        exchangeLink={`https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=${tokenAddress}`}
-        WETHPrice={uniswapPriceData?.WETHPrice.toFixed(0)}
-        loading={uniswapLoading}
+        exchangeLink={`https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=${tokenAddress}`}
+        WETHPrice={pancakeswapPriceData?.midPrice.toFixed(0)}
+        loading={pancakeswapLoading}
         style={{ marginBottom: '0.5rem' }}
       />
       <TokenAMMPriceRow
         exchangeName="Sushiswap"
         tokenSymbol={tokenSymbol}
-        exchangeLink={`https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=${tokenAddress}`}
+        exchangeLink={`https://app.sushi.com/swap?inputCurrency=BNB&outputCurrency=${tokenAddress}`}
         WETHPrice={sushiswapPriceData?.midPrice.toFixed(0)}
         loading={sushiswapLoading}
       />

@@ -44,8 +44,8 @@ export default function ProjectLogo({
           style={{
             fontSize: '2.5rem',
           }}
-        >
-          🧃
+        >          
+          <img src='/assets/default_icon.png' alt="project logo"/>
         </div>
       )}
     </div>

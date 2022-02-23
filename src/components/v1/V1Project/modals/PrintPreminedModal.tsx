@@ -102,7 +102,7 @@ export default function PrintPreminedModal({
               required: true,
               validator: (rule, value) => {
                 if (!value || !utils.isAddress(value))
-                  return Promise.reject('Not a valid ETH address')
+                  return Promise.reject('Not a valid BNB address')
                 else return Promise.resolve()
               },
             },
@@ -116,7 +116,7 @@ export default function PrintPreminedModal({
           onChange={val => setValue(val ?? '0')}
           accessory={
             terminal?.version === '1' ? (
-              <InputAccessoryButton content="ETH" />
+              <InputAccessoryButton content="BNB" />
             ) : undefined
           }
         />
@@ -125,12 +125,12 @@ export default function PrintPreminedModal({
         </Form.Item>
         <Form.Item
           name="preferUnstaked"
-          label="Mint as ERC-20"
+          label="Mint as BEP-20"
           valuePropName="checked"
           extra={
             erc20Issued
-              ? `Enabling this will mint ${tokenSymbol} ERC-20 tokens. Otherwise staked ${tokenSymbol} tokens will be minted, which can be claimed later as ERC-20 by the receiver.`
-              : 'ERC-20 tokens can only be minted once an ERC-20 token has been issued for this project.'
+              ? `Enabling this will mint ${tokenSymbol} BEP-20 tokens. Otherwise staked ${tokenSymbol} tokens will be minted, which can be claimed later as BEP-20 by the receiver.`
+              : 'BEP-20 tokens can only be minted once an BEP-20 token has been issued for this project.'
           }
           initialValue={false}
         >

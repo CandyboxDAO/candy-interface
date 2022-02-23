@@ -1,6 +1,6 @@
 import { SemanticRadii } from 'models/semantic-theme/radii'
 
-export const juiceRadii: SemanticRadii = {
+export const candyRadii: SemanticRadii = {
   xs: '1px',
   sm: '1px',
   md: '1px',

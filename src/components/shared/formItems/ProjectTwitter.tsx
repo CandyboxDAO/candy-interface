@@ -17,7 +17,7 @@ export default function ProjectTwitter({
     >
       <Input
         prefix={t`@`}
-        placeholder={t`juiceboxETH`}
+        placeholder={t`CandyboxDAO`}
         type="string"
         autoComplete="off"
       />

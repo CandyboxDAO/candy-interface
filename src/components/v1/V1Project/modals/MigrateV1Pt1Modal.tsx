@@ -62,11 +62,11 @@ export default function MigrateV1Pt1Modal({
       okButtonProps={{ disabled: needsBalance }}
     >
       <h2>
-        <Trans>Migrate to Juicebox V1.1</Trans>
+        <Trans>Migrate to Candybox V1.1</Trans>
       </h2>
       <p>
         <Trans>
-          This project is currently using the Juicebox V1 terminal contract. New
+          This project is currently using the Candybox V1 terminal contract. New
           features introduced in V1.1 allow the project owner to:
         </Trans>
       </p>
@@ -83,7 +83,7 @@ export default function MigrateV1Pt1Modal({
       </ul>
       <p>
         <a
-          href="https://juicebox.notion.site/Migration-plan-1a05f62d80284cb1b8df2a3b53da341a"
+          href="https://candybox.notion.site/Migration-plan-1a05f62d80284cb1b8df2a3b53da341a"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -98,7 +98,7 @@ export default function MigrateV1Pt1Modal({
               <b>NOTE:</b> This project has a balance of 0. Projects cannot be
               migrated without a balance. To migrate this project, first pay it
               or use the button below to deposit 1 wei (0.000000000000000001 or
-              10<sup>-18</sup> ETH).
+              10<sup>-18</sup> BNB).
             </Trans>
           </p>
           <p>

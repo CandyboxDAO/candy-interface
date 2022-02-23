@@ -203,7 +203,7 @@ export default function ProjectToolDrawerModal({
                     amount,
                   })
                 }
-                accessory={<InputAccessoryButton content="ETH" />}
+                accessory={<InputAccessoryButton content="BNB" />}
               />
             </Form.Item>
             <Form.Item>

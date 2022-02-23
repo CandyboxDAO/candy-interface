@@ -179,7 +179,7 @@ export default function ConfirmDeployProject() {
                               precision: 4,
                             },
                           )}{' '}
-                          after JBX fee
+                          after CBX fee
                         </Trans>
                         )
                       </span>

@@ -89,7 +89,7 @@ export default function Rewards() {
     width: 128,
   }
 
-  const tokensLabel = tokenSymbol ? tokenSymbol + ' ' + t`ERC20` : t`Tokens`
+  const tokensLabel = tokenSymbol ? tokenSymbol + ' ' + t`BEP20` : t`Tokens`
 
   return (
     <div>
@@ -214,15 +214,15 @@ export default function Rewards() {
         <Space direction="vertical" style={{ width: '100%' }}>
           {overflow?.gt(0) ? (
             <Button onClick={() => setRedeemModalVisible(true)} block>
-              <Trans>Return my ETH</Trans>
+              <Trans>Return my BNB</Trans>
             </Button>
           ) : (
             <React.Fragment>
               <Tooltip
-                title={t`Cannot redeem tokens for ETH because this project has no overflow.`}
+                title={t`Cannot redeem tokens for BNB because this project has no overflow.`}
               >
                 <Button disabled block>
-                  <Trans>Return my ETH</Trans>
+                  <Trans>Return my BNB</Trans>
                 </Button>
               </Tooltip>
               <Button onClick={() => setRedeemModalVisible(true)} block>
@@ -231,7 +231,7 @@ export default function Rewards() {
             </React.Fragment>
           )}
           <Button onClick={() => setUnstakeModalVisible(true)} block>
-            <Trans>Claim {tokenSymbol || t`tokens`} as ERC20</Trans>
+            <Trans>Claim {tokenSymbol || t`tokens`} as BEP20</Trans>
           </Button>
           {hasPrintPreminePermission && projectId?.gt(0) && (
             <Tooltip

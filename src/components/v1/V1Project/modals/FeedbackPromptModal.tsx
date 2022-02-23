@@ -42,7 +42,7 @@ export default function FeedbackPromptModal({
       <p>
         <Trans>
           How did we do? We'd love to get your feedback so we can make creating
-          Juicebox projects as juicy as possible!
+          Candybox projects as juicy as possible!
         </Trans>
       </p>
       <p>

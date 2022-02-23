@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 
 import useContractReader from './ContractReader'
 
-/** Returns address of ERC20 token issued for project with `projectId`. */
+/** Returns address of BEP20 token issued for project with `projectId`. */
 export default function useTokenAddressOfProject(
   projectId: BigNumberish | undefined,
 ) {

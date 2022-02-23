@@ -104,7 +104,7 @@ export default function RedeemModal({
   let modalTitle: string
   // Defining whole sentence for translations
   if (overflow?.gt(0)) {
-    modalTitle = t`Redeem ${tokensTextLong} for ETH`
+    modalTitle = t`Redeem ${tokensTextLong} for BNB`
   } else {
     modalTitle = t`Burn ${tokensTextLong}`
   }
@@ -114,7 +114,7 @@ export default function RedeemModal({
   if (overflow?.gt(0)) {
     buttonText = t`Redeem ${formattedNum(redeemAmount, {
       precision: 2,
-    })} ${tokensTextShort} for ETH`
+    })} ${tokensTextShort} for BNB`
   } else {
     buttonText = t`Burn ${formattedNum(redeemAmount, {
       precision: 2,
@@ -183,7 +183,7 @@ export default function RedeemModal({
         <p>
           {overflow?.gt(0) ? (
             <Trans>
-              Tokens can be redeemed for a portion of this project's ETH
+              Tokens can be redeemed for a portion of this project's BNB
               overflow, according to the bonding curve rate of the current
               funding cycle.{' '}
               <span style={{ fontWeight: 500, color: colors.text.warn }}>
@@ -194,7 +194,7 @@ export default function RedeemModal({
             <Trans>
               <span style={{ fontWeight: 500, color: colors.text.warn }}>
                 <strong>This project has no overflow</strong>, so you will not
-                receive any ETH for burning tokens.
+                receive any BNB for burning tokens.
               </span>
             </Trans>
           )}
@@ -229,7 +229,7 @@ export default function RedeemModal({
               <Trans>
                 You will receive{' '}
                 {currentFC?.currency.eq(CURRENCY_USD) ? 'minimum ' : ' '}
-                {formatWad(minAmount, { precision: 8 }) || '--'} ETH
+                {formatWad(minAmount, { precision: 8 }) || '--'} BNB
               </Trans>
             </div>
           ) : null}

@@ -40,7 +40,7 @@ export default function HoldingsProjects() {
             }}
             hidden={isLoading}
           >
-            You don't hold tokens for any Juicebox project.
+            You don't hold tokens for any Candybox project.
           </div>
         ) : (
           <div

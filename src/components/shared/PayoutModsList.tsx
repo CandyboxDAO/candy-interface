@@ -188,9 +188,9 @@ export default function PayoutModsList({
           >
             <div>
               <p>
-                Distribute available funds to other Ethereum wallets or Juicebox
+                Distribute available funds to other BNB Chain(BSC) wallets or Candybox
                 projects as payouts. Use this to pay contributors, charities,
-                Juicebox projects you depend on, or anyone else. Funds are
+                Candybox projects you depend on, or anyone else. Funds are
                 distributed whenever a withdrawal is made from your project.
               </p>
               <p>

@@ -19,7 +19,7 @@ export default function NavLanguageSelector({
     fontWeight: 500,
   }
 
-  // Renders Select Option for each language available on Juicebox
+  // Renders Select Option for each language available on Candybox
   const renderLanguageOption = (lang: string) => {
     if (disableLang === lang) {
       return null

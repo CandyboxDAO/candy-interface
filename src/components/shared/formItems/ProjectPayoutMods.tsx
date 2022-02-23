@@ -454,7 +454,7 @@ export default function ProjectPayoutMods({
           <Form.Item>
             <Select value={editingModType} onChange={setEditingModType}>
               <Select.Option value="address">Wallet address</Select.Option>
-              <Select.Option value="project">Juicebox project</Select.Option>
+              <Select.Option value="project">Candybox project</Select.Option>
             </Select>
           </Form.Item>
 

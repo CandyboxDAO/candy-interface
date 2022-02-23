@@ -98,7 +98,7 @@ export default function V1Dashboard() {
     if (metadata?.name) {
       document.title = metadata.name
     } else {
-      document.title = 'Juicebox'
+      document.title = 'Candybox'
     }
   }, [metadata])
 

@@ -52,7 +52,7 @@ export default function TrendingProjectCard({
 
   const terminalVersion = getTerminalVersion(project?.terminal)
 
-  // If the total paid is greater than 0, but less than 10 ETH, show two decimal places.
+  // If the total paid is greater than 0, but less than 10 BNB, show two decimal places.
   const precision =
     project.trendingVolume?.gt(0) &&
     project.trendingVolume.lt(constants.WeiPerEther)

@@ -24,8 +24,10 @@ function App() {
   const networkName = readNetwork.name
 
   const supportedNetworks: NetworkName[] = [
-    NetworkName.mainnet,
-    NetworkName.rinkeby,
+    // NetworkName.mainnet,
+    // NetworkName.rinkeby,
+    NetworkName.bsc,
+    NetworkName.bscTestnet,
   ]
 
   useLayoutEffect(() => {
@@ -65,16 +67,16 @@ function App() {
           }}
         >
           <Space direction="vertical">
-            <h2>Connect wallet to {networkName}</h2>
+            <h2>Connect wallet to {readNetwork.dispalyName}</h2>
             <div>Or, go to:</div>
             {supportedNetworks
               .filter(n => process.env.REACT_APP_INFURA_NETWORK !== n)
               .map(_n => {
-                const subDomain = _n === NetworkName.mainnet ? '' : _n + '.'
+                const subDomain = _n === NetworkName.bsc ? '' : _n + '.'
 
                 return (
-                  <a key={_n} href={`https://${subDomain}juicebox.money`}>
-                    {subDomain}juicebox.money
+                  <a key={_n} href={`https://${subDomain}candybox.money`}>
+                    {subDomain}candybox.money
                   </a>
                 )
               })}

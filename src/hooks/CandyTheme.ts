@@ -2,7 +2,7 @@ import type { ThemeContextType } from 'contexts/themeContext'
 
 import { useEffect, useState } from 'react'
 
-import { juiceTheme } from 'constants/theme'
+import { candyTheme } from 'constants/theme'
 import { ThemeOption } from 'constants/theme/theme-option'
 
 const flattenNestedObject = (
@@ -19,7 +19,7 @@ const flattenNestedObject = (
     }
   }, {})
 
-export function useJuiceTheme(
+export function useCandyTheme(
   storageKey: string = 'jb_theme',
 ): ThemeContextType {
   const initialThemeOption =
@@ -33,12 +33,12 @@ export function useJuiceTheme(
   )
 
   const setRootVarsForThemeOption = (themeOption: ThemeOption) => {
-    Object.entries(flattenNestedObject(juiceTheme(themeOption).colors)).forEach(
+    Object.entries(flattenNestedObject(candyTheme(themeOption).colors)).forEach(
       ([key, value]) =>
         document.documentElement.style.setProperty('--' + key, value),
     )
 
-    Object.entries(juiceTheme(themeOption).radii).forEach(([key, value]) => {
+    Object.entries(candyTheme(themeOption).radii).forEach(([key, value]) => {
       if (!value) return
       document.documentElement.style.setProperty(
         '--radius-' + key,
@@ -59,7 +59,7 @@ export function useJuiceTheme(
 
   return {
     themeOption: currentThemeOption,
-    theme: juiceTheme(currentThemeOption),
+    theme: candyTheme(currentThemeOption),
     isDarkMode: isDarkMode,
     forThemeOption: map => map[currentThemeOption],
     setThemeOption: (themeOption: ThemeOption) => {

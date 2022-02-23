@@ -27,7 +27,7 @@ export default function TokenRefs({
                   refs.map((_r, _i) =>
                     i === _i
                       ? {
-                          type: _r.type === 'erc20' ? 'project' : 'erc20',
+                          type: _r.type === 'bep20' ? 'project' : 'bep20',
                           value: '',
                         }
                       : _r,
@@ -35,11 +35,11 @@ export default function TokenRefs({
                 )
               }
             >
-              {r.type === 'erc20' ? 'ERC-20' : 'Project'}
+              {r.type === 'bep20' ? 'BEP-20' : 'Project'}
             </Button>
 
             <div style={{ flex: 1 }}>
-              {r.type === 'erc20' ? (
+              {r.type === 'bep20' ? (
                 <Form.Item>
                   <Input
                     value={r.value}
@@ -84,7 +84,7 @@ export default function TokenRefs({
         style={{ marginTop: 10 }}
         size="small"
         block
-        onClick={() => onRefsChange([...refs, { type: 'erc20', value: '' }])}
+        onClick={() => onRefsChange([...refs, { type: 'bep20', value: '' }])}
       >
         Add
       </Button>

@@ -30,7 +30,7 @@ export default function ProjectTarget({
 } & FormItemExt) {
   return (
     <Form.Item
-      extra="The maximum amount of funds that can be distributed from this project in one funding cycle. Funds will be withdrawn in ETH no matter the currency you choose."
+      extra="The maximum amount of funds that can be distributed from this project in one funding cycle. Funds will be withdrawn in BNB no matter the currency you choose."
       name={name}
       label={hideLabel ? undefined : 'Funding target'}
       {...formItemProps}

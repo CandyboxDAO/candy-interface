@@ -1,10 +1,15 @@
 import axios from 'axios'
+
 import {
   useInfiniteQuery,
   UseInfiniteQueryOptions,
   useQuery,
   UseQueryOptions,
 } from 'react-query'
+
+import { NetworkName } from 'models/network-name'
+
+import { readNetwork } from 'constants/networks'
 
 import {
   EntityKey,
@@ -19,7 +24,11 @@ import {
   SubgraphQueryReturnTypes,
 } from '../utils/graph'
 
-const subgraphUrl = process.env.REACT_APP_SUBGRAPH_URL
+
+
+const subgraphUrl = readNetwork.name === NetworkName.bsc? 
+  process.env.REACT_APP_SUBGRAPH_URL: process.env.REACT_APP_SUBGRAPH_URL_TESTNET;
+  
 const staleTime = 60 * 1000 // 60 seconds
 
 // This looks up the entity type and constructs an object

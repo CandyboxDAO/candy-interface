@@ -120,47 +120,61 @@ export const menu = (onClickMenuItems?: VoidFunction) => {
               ?.scrollIntoView({ behavior: 'smooth' })
           }, 0)
         }}
-      />
+      />     
       <MenuItem
-        text={t`Discord`}
-        route="https://discord.gg/6jXrJSyDFf"
+        text={t`Twitter`}
+        route="https://twitter.com/candyboxdao"
         onClick={onClickMenuItems}
       />
-
-      <ItemDropdown
+       <MenuItem
+        text={t`Telegram`}
+        route="https://t.me/CandyboxDAO"
+        onClick={onClickMenuItems}
+      />
+       <MenuItem
+        text={t`Discord`}
+        route="https://discord.gg/DCUmdwJemm"
+        onClick={onClickMenuItems}
+      />
+       <MenuItem
+        text={t`Docs`}
+        route="https://docs.candybox.money"
+        onClick={onClickMenuItems}
+      />
+      {/* <ItemDropdown
         heading={t`Resources`}
         dropdownItems={[
           <DropdownItem
             key="docs"
             text={t`Docs`}
-            route="https://docs.juicebox.money"
+            route="https://docs.candybox.money"
             onClick={onClickMenuItems}
           />,
-          <DropdownItem
-            key="blog"
-            text={t`Blog`}
-            route="https://blog.juicebox.money"
-            onClick={onClickMenuItems}
-          />,
-          <DropdownItem
-            key="workspace"
-            text={t`Workspace`}
-            route="https://juicebox.notion.site/"
-          />,
-          <DropdownItem
-            key="podcast"
-            text={t`Podcast`}
-            route="https://open.spotify.com/show/4G8ji7vofcOx2acXcjXIa4?si=1e5e6e171ed744e8"
-            onClick={onClickMenuItems}
-          />,
-          <DropdownItem
-            key="peel"
-            text={t`Peel`}
-            route="https://discord.gg/XvmfY4Hkcz"
-            onClick={onClickMenuItems}
-          />,
+          // <DropdownItem
+          //   key="blog"
+          //   text={t`Blog`}
+          //   route="https://blog.candybox.money"
+          //   onClick={onClickMenuItems}
+          // />,
+          // <DropdownItem
+          //   key="workspace"
+          //   text={t`Workspace`}
+          //   route="https://candybox.notion.site/"
+          // />,
+          // <DropdownItem
+          //   key="podcast"
+          //   text={t`Podcast`}
+          //   route="https://open.spotify.com/show/4G8ji7vofcOx2acXcjXIa4?si=1e5e6e171ed744e8"
+          //   onClick={onClickMenuItems}
+          // />,
+          // <DropdownItem
+          //   key="peel"
+          //   text={t`Peel`}
+          //   route="https://discord.gg/XvmfY4Hkcz"
+          //   onClick={onClickMenuItems}
+          // />,
         ]}
-      />
+      /> */}
     </>
   )
 }

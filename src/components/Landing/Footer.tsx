@@ -55,9 +55,9 @@ export default function Footer() {
         {Object.keys(Languages).map(languageLink)}
       </div>
       <div style={{ ...footerLinksStyles, display: 'flex' }}>
-        {link('Discord', 'https://discord.gg/6jXrJSyDFf')}
-        {link('GitHub', 'https://github.com/jbx-protocol/juice-interface')}
-        {link('Twitter', 'https://twitter.com/juiceboxETH')}
+        {link('Discord', 'https://discord.gg/DCUmdwJemm')}
+        {link('GitHub', 'https://github.com/candyboxdao/candy-interface')}
+        {link('Twitter', 'https://twitter.com/CandyboxDAO')}
       </div>
     </div>
   )

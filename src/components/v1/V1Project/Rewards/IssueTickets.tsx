@@ -26,23 +26,23 @@ export default function IssueTickets() {
     <div>
       <Space>
         <Button loading={loading} onClick={() => setModalVisible(true)}>
-          <Trans>Issue ERC-20 token</Trans>
+          <Trans>Issue BEP-20 token</Trans>
         </Button>
         <TooltipIcon
-          tip={t`Issue an ERC-20 to be used as this project's token. Once issued, anyone can claim their existing token balance in the new token.`}
+          tip={t`Issue an BEP-20 to be used as this project's token. Once issued, anyone can claim their existing token balance in the new token.`}
         />
       </Space>
 
       <Modal
         visible={modalVisible}
-        title={t`Issue ERC-20 token`}
+        title={t`Issue BEP-20 token`}
         okText={t`Issue token`}
         onOk={issue}
         onCancel={() => setModalVisible(false)}
       >
         <p>
           <Trans>
-            Issue an ERC-20 token for this project. Once issued, anyone can
+            Issue an BEP-20 token for this project. Once issued, anyone can
             claim their existing token balance in the new token.
           </Trans>
         </p>

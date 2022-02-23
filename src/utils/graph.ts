@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import { parseDeployedERC20EventJson } from 'models/subgraph-entities/deployed-erc20-event'
 import {
   DistributeToPayoutModEvent,
@@ -41,6 +42,10 @@ import {
   TapEvent,
   TapEventJson,
 } from 'models/subgraph-entities/tap-event'
+
+import { NetworkName } from 'models/network-name'
+
+import { readNetwork } from 'constants/networks'
 
 export interface SubgraphEntities {
   project: Project
@@ -194,7 +199,8 @@ export const formatGraphQuery = <E extends EntityKey, K extends EntityKeys<E>>(
   )} } }`
 }
 
-const subgraphUrl = process.env.REACT_APP_SUBGRAPH_URL
+const subgraphUrl = readNetwork.name === NetworkName.bsc? 
+  process.env.REACT_APP_SUBGRAPH_URL: process.env.REACT_APP_SUBGRAPH_URL_TESTNET;
 
 export const trimHexZero = (hexStr: string) => hexStr.replace('0x0', '0x')
 

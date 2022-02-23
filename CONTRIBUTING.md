@@ -1,6 +1,6 @@
-# Contributing to Juicebox
+# Contributing to Candybox
 
-If you're interested in contributing ideas or code to Juicebox, you're in the
+If you're interested in contributing ideas or code to Candybox, you're in the
 right place!
 
 ## Development
@@ -11,7 +11,7 @@ development.
 ## Finding something to work on
 
 Start with issues labelled
-[`good first issue`](https://github.com/jbx-protocol/juice-juicehouse/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+[`good first issue`](https://github.com/candyboxdao/candy-candyhouse/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 ## Getting your pull request reviewed, approved, and merged
 
@@ -56,14 +56,14 @@ Before your PR is merged, it must meet the following criteria:
 1. The PR is approved by at least one [codeowner](.github/CODEOWNERS).
 1. Significant UI/UX changes are discussed by other design/dev contributors.
 
-### Juicebox app release
+### Candybox app release
 
 All changes to the `main` branch will be automatically deployed via
 [Fleek](https://fleek.co).
 
 ### Supported browsers
 
-Juicebox supports the following web browsers:
+Candybox supports the following web browsers:
 
 - Google Chrome
 - Mozilla Firefox
@@ -71,7 +71,7 @@ Juicebox supports the following web browsers:
 
 ## Translations
 
-Juicebox uses [Crowdin](https://crowdin.com/project/juicebox-interface) for
+Candybox uses [Crowdin](https://crowdin.com/project/candybox-interface) for
 managing translations. A GitHub workflow uploads new strings for translation to the
 Crowdin project whenever code using the lingui translation macros is merged into
 main.
@@ -103,7 +103,7 @@ yarn i18n:extract
 ### Contributing translations
 
 For details of how to contribute as a translator, see our
-[How to become a Juicebox translator](https://www.notion.so/juicebox/How-to-become-a-Juicebox-translator-81fdd9344ef043909a48bd7373ef73d7)
+[How to become a Candybox translator](https://www.notion.so/candybox/How-to-become-a-Candybox-translator-81fdd9344ef043909a48bd7373ef73d7)
 Notion page.
 
 ### Adding a language (for devs)

@@ -10,7 +10,7 @@ const loadTerminalAddress = (
   network: NetworkName,
   terminal: V1TerminalName,
 ): string =>
-  require(`@jbx-protocol/contracts-v1/deployments/${network}/${terminal}.json`)
+  require(`@candyboxdao/contracts-v1/deployments/${network}/${terminal}.json`)
     .address
 
 export const getTerminalAddress = (

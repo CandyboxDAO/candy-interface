@@ -409,7 +409,7 @@ export default function ReconfigureFCModal({
                               amountSubFee(editingFC.target, terminalFee),
                               { precision: 4 },
                             )}{' '}
-                            after JBX fee
+                            after CBX fee
                           </Trans>
                         </span>
                       ) : (

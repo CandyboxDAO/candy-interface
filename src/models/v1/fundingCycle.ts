@@ -6,7 +6,7 @@ export interface V1FundingCycle {
   number: BigNumber
   basedOn: BigNumber
   target: BigNumber
-  currency: BigNumber // 0 ETH, 1 USD
+  currency: BigNumber // 0 BNB, 1 USD
   start: BigNumber
   duration: BigNumber
   tapped: BigNumber

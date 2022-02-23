@@ -135,7 +135,7 @@ export default function Projects() {
           }}
         >
           <h1>
-            <Trans>Projects on Juicebox</Trans>
+            <Trans>Projects on Candybox</Trans>
           </h1>
 
           <Link to="/create">
@@ -148,11 +148,11 @@ export default function Projects() {
         <div>
           <p style={{ maxWidth: 800, marginBottom: 20 }}>
             <Trans>
-              <InfoCircleOutlined /> The Juicebox protocol is open to anyone,
+              <InfoCircleOutlined /> The Candybox protocol is open to anyone,
               and project configurations can vary widely. There are risks
               associated with interacting with all projects on the protocol.
               Projects built on the protocol are not endorsed or vetted by
-              JuiceboxDAO or Peel. Do your own research and understand the risks
+              CandyboxDAO or Peel. Do your own research and understand the risks
               before committing your funds.
             </Trans>
           </p>

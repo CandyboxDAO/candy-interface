@@ -7,7 +7,7 @@ import { CURRENCY_USD } from 'constants/currency'
 
 import CurrencySymbol from './CurrencySymbol'
 
-// Takes an ETH amount and returns equiv in USD
+// Takes an BNB amount and returns equiv in USD
 export default function ETHToUSD({
   ethAmount,
 }: {

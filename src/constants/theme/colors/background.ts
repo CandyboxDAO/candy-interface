@@ -16,8 +16,8 @@ export const backgroundColors: Record<
     warn: lightColors.yellow,
     failure: lightColors.red,
     brand: {
-      primary: lightColors.juiceOrange,
-      secondary: lightColors.juiceLight,
+      primary: lightColors.candyOrange,
+      secondary: lightColors.candyLight,
     },
     action: {
       primary: lightColors.cta,
@@ -34,8 +34,8 @@ export const backgroundColors: Record<
     warn: darkColors.yellow,
     failure: darkColors.red,
     brand: {
-      primary: darkColors.juiceOrange,
-      secondary: darkColors.juiceLight,
+      primary: darkColors.candyOrange,
+      secondary: darkColors.candyLight,
     },
     action: {
       primary: darkColors.cta,

@@ -13,15 +13,15 @@ export const textColors: Record<ThemeOption, SemanticColors['text']> = {
     success: lightColors.green,
     warn: lightColors.yellow,
     failure: lightColors.red,
-    header: lightColors.juiceOrange,
+    header: lightColors.candyOrange,
     action: {
       primary: lightColors.cta,
       secondary: lightColors.cta,
       highlight: lightColors.ctaHighlight,
     },
     brand: {
-      primary: lightColors.juiceOrange,
-      secondary: lightColors.juiceLight,
+      primary: lightColors.candyOrange,
+      secondary: lightColors.candyLight,
     },
     over: {
       brand: {
@@ -48,15 +48,15 @@ export const textColors: Record<ThemeOption, SemanticColors['text']> = {
     success: darkColors.green,
     warn: darkColors.yellow,
     failure: darkColors.red,
-    header: darkColors.juiceOrange,
+    header: darkColors.candyOrange,
     action: {
       primary: darkColors.cta,
       secondary: darkColors.cta,
       highlight: darkColors.ctaHighlight,
     },
     brand: {
-      primary: darkColors.juiceOrange,
-      secondary: darkColors.juiceLight,
+      primary: darkColors.candyOrange,
+      secondary: darkColors.candyLight,
     },
     over: {
       brand: {

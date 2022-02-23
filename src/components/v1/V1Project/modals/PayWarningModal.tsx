@@ -24,15 +24,15 @@ export default function PayWarningModal({
       </h2>
       <p style={{ fontWeight: 500 }}>
         <a
-          href="https://github.com/jbx-protocol/juice-contracts"
+          href="https://github.com/candyboxdao/candy-contracts"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Trans>Juicebox contracts</Trans>
+          <Trans>Candybox contracts</Trans>
         </a>{' '}
         <Trans>
           are unaudited, and may be vulnerable to bugs or hacks. All funds moved
-          through Juicebox could be lost or stolen. JuiceboxDAO and Peel are not
+          through Candybox could be lost or stolen. CandyboxDAO and Peel are not
           liable for any losses by projects or their supporters.
         </Trans>
       </p>

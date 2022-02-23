@@ -10,7 +10,7 @@ import { decodeFundingCycleMetadata } from 'utils/fundingCycle'
 
 import useContractReader from './ContractReader'
 
-// Returns the value in ETH that an amount of tokens can be redeemed for
+// Returns the value in BNB that an amount of tokens can be redeemed for
 export function useRedeemRate({
   tokenAmount,
   fundingCycle,

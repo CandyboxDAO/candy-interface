@@ -312,7 +312,7 @@ export default function BalanceTimeline({ height }: { height: number }) {
     let text: string
     switch (tab) {
       case 'balance':
-        text = t`In Juicebox`
+        text = t`In Candybox`
         break
       case 'volume':
         text = t`Volume`

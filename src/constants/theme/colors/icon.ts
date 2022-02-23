@@ -17,8 +17,8 @@ export const iconColors: Record<ThemeOption, SemanticColors['icon']> = {
       secondary: lightColors.cta,
     },
     brand: {
-      primary: lightColors.juiceOrange,
-      secondary: lightColors.juiceLight,
+      primary: lightColors.candyOrange,
+      secondary: lightColors.candyLight,
     },
     over: {
       brand: {
@@ -49,8 +49,8 @@ export const iconColors: Record<ThemeOption, SemanticColors['icon']> = {
       secondary: darkColors.cta,
     },
     brand: {
-      primary: darkColors.juiceOrange,
-      secondary: darkColors.juiceLight,
+      primary: darkColors.candyOrange,
+      secondary: darkColors.candyLight,
     },
     over: {
       brand: {

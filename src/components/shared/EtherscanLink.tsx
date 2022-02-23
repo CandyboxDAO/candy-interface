@@ -21,12 +21,12 @@ export default function EtherscanLink({
 
   let subdomain = ''
 
-  if (readNetwork.name !== NetworkName.mainnet) {
-    subdomain = readNetwork.name + '.'
+  if (readNetwork.name !== NetworkName.bsc) {
+    subdomain = (readNetwork.name === NetworkName.bscTestnet? "testnet":readNetwork.name) + '.'
   }
 
   const goToEtherscan = () => {
-    window.open(`https://${subdomain}etherscan.io/${type}/${value}`)
+    window.open(`https://${subdomain}bscscan.com/${type}/${value}`)
   }
 
   if (type === 'tx') {
@@ -36,7 +36,7 @@ export default function EtherscanLink({
           className="hover-action"
           style={{ fontWeight: 400 }}
           onClick={goToEtherscan}
-          href={`https://${subdomain}etherscan.io/${type}/${value}`}
+          href={`https://${subdomain}bscscan.com/${type}/${value}`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -46,12 +46,12 @@ export default function EtherscanLink({
     )
   }
   return (
-    <Tooltip trigger={['hover', 'click']} title={t`Go to Etherscan`}>
+    <Tooltip trigger={['hover', 'click']} title={t`Go to BscScan`}>
       <a
         className="hover-action"
         style={{ fontWeight: 400 }}
         onClick={goToEtherscan}
-        href={`https://${subdomain}etherscan.io/${type}/${value}`}
+        href={`https://${subdomain}bscscan.com/${type}/${value}`}
         target="_blank"
         rel="noopener noreferrer"
       >

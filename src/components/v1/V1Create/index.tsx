@@ -54,6 +54,8 @@ import TicketingForm, {
   TicketingFormFields,
 } from '../../shared/forms/TicketingForm'
 
+import { readNetwork } from 'constants/networks'
+
 const terminalVersion: V1TerminalVersion = '1.1'
 
 export default function V1Create() {
@@ -384,7 +386,7 @@ export default function V1Create() {
 
         <p style={{ fontWeight: 500 }}>
           <Trans>
-            The JBX protocol is unaudited, and projects built on it may be
+            The CBX protocol is unaudited, and projects built on it may be
             vulnerable to bugs or exploits. Be smart!
           </Trans>
         </p>
@@ -729,7 +731,7 @@ export default function V1Create() {
           okText={
             userAddress
               ? signerNetwork
-                ? t`Deploy project on ${signerNetwork}`
+                ? t`Deploy project on ${readNetwork.dispalyName}`
                 : t`Deploy project`
               : t`Connect wallet to deploy`
           }

@@ -174,7 +174,7 @@ export default function FundingCycleDetails({
                 tokenSymbol: tokenSymbol,
                 capitalize: false,
                 plural: true,
-              })} received per ETH paid to the treasury. This can change over time according to the discount rate and reserved tokens amount of future funding cycles.`}
+              })} received per BNB paid to the treasury. This can change over time according to the discount rate and reserved tokens amount of future funding cycles.`}
             />
           }
           span={2}
@@ -196,7 +196,7 @@ export default function FundingCycleDetails({
               capitalize: false,
               plural: true,
             })}
-            /ETH
+            /BNB
           </Trans>
         </Descriptions.Item>
 

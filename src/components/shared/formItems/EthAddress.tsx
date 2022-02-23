@@ -93,7 +93,7 @@ export default function EthAddress({
       }
     >
       <Input
-        placeholder={'juicebox.eth / ' + constants.AddressZero}
+        placeholder={'candybox.eth / ' + constants.AddressZero}
         type="string"
         autoComplete="off"
         onChange={e => onInputChange(e.target.value)}

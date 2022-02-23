@@ -7,7 +7,7 @@ export function useEthBalanceQuery(address: string | undefined) {
     ['eth-balance', address],
     async () => {
       if (!address) {
-        throw new Error("Can't fetch ETH balance, address is undefined")
+        throw new Error("Can't fetch BNB balance, address is undefined")
       }
       return readProvider.getBalance(address)
     },

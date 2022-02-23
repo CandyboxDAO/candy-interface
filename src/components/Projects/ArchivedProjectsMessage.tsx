@@ -19,10 +19,10 @@ export default function ArchivedProjectsMessage({
         <Trans>
           <InfoCircleOutlined /> Archived projects have not been modified or
           deleted on the blockchain, and can still be interacted with directly
-          through the Juicebox contracts.
+          through the Candybox contracts.
         </Trans>
         <Tooltip
-          title={t`If you have a project you'd like to archive, let the Juicebox team know in Discord.`}
+          title={t`If you have a project you'd like to archive, let the Candybox team know in Discord.`}
         >
           <span
             style={{

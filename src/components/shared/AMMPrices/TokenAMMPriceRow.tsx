@@ -2,16 +2,17 @@ import { LinkOutlined, LoadingOutlined } from '@ant-design/icons'
 import { t, Trans } from '@lingui/macro'
 import { Tooltip } from 'antd'
 import SushiswapLogo from 'components/icons/Sushiswap'
-import UniswapLogo from 'components/icons/Uniswap'
+import PancakeswapLogo from 'components/icons/Pancakeswap'
+// import UniswapLogo from 'components/icons/Uniswap'
 import { CSSProperties } from 'react'
 import { formattedNum } from 'utils/formatNumber'
 
 import TooltipIcon from '../TooltipIcon'
 
-type ExchangeName = 'Uniswap' | 'Sushiswap'
+type ExchangeName = 'Pancakeswap' | 'Sushiswap'
 
 const LOGOS = {
-  Uniswap: UniswapLogo,
+  Pancakeswap: PancakeswapLogo,
   Sushiswap: SushiswapLogo,
 }
 
@@ -76,7 +77,7 @@ export default function TokenAMMPriceRow({
       {!loading &&
         (WETHPrice ? (
           <Tooltip
-            title={t`${tokenSymbol}/ETH exchange rate on ${exchangeName}.`}
+            title={t`${tokenSymbol}/BNB exchange rate on ${exchangeName}.`}
             overlayInnerStyle={{ ...fontStyle }}
           >
             <a
@@ -85,7 +86,7 @@ export default function TokenAMMPriceRow({
               target="_blank"
               style={{ fontWeight: 400 }}
             >
-              {`${formattedNum(WETHPrice)} ${tokenSymbol}/ETH`}
+              {`${formattedNum(WETHPrice)} ${tokenSymbol}/BNB`}
               <LinkOutlined style={{ marginLeft: '0.2rem' }} />
             </a>
           </Tooltip>

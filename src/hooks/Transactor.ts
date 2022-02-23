@@ -105,7 +105,7 @@ export function useTransactor({
         etherscanNetwork = network.name + '.'
       }
 
-      let etherscanTxUrl = 'https://' + etherscanNetwork + 'etherscan.io/tx/'
+      let etherscanTxUrl = 'https://' + etherscanNetwork + 'bscscan.com/tx/'
       if (network.chainId === 100) {
         etherscanTxUrl = 'https://blockscout.com/poa/xdai/tx/'
       }

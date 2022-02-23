@@ -91,7 +91,7 @@ export default function BudgetTargetInput({
               }
             />
           </div>
-          <div>after {fromPerbicent(fee?.toString())}% JBX fee</div>
+          <div>after {fromPerbicent(fee?.toString())}% CBX fee</div>
         </div>
       )}
     </div>

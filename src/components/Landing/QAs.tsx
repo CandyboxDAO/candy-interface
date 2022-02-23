@@ -2,7 +2,7 @@ import { t, Trans } from '@lingui/macro'
 
 export const OverflowVideoLink = ({ text }: { text: string }) => (
   <a
-    href="https://www.youtube.com/watch?v=9Mq5oDh0aBY&ab_channel=JuiceboxDAO"
+    href="https://www.youtube.com/watch?v=9Mq5oDh0aBY&ab_channel=CandyboxDAO"
     rel="noreferrer"
     target="_blank"
   >
@@ -10,7 +10,7 @@ export const OverflowVideoLink = ({ text }: { text: string }) => (
   </a>
 )
 const JBDiscordLink = ({ text }: { text: string }) => (
-  <a href="https://discord.gg/6jXrJSyDFf" rel="noreferrer" target="_blank">
+  <a href="https://discord.gg/DCUmdwJemm" rel="noreferrer" target="_blank">
     {text}
   </a>
 )
@@ -25,20 +25,20 @@ const JBDiscordLink = ({ text }: { text: string }) => (
 export default function QAs() {
   return [
     {
-      q: t`Who funds Juicebox projects?`,
+      q: t`Who funds Candybox projects?`,
       a: [
         t`Users fund your project by paying to use your app or service, or as a patron or investor by making a payment directly to your project's smart contract (like on this app).`,
-        t`For users paying through your app, you should route those funds through the Juicebox smart contracts so they receive tokens in return.`,
+        t`For users paying through your app, you should route those funds through the Candybox smart contracts so they receive tokens in return.`,
       ],
     },
     {
-      q: t`What does Juicebox cost?`,
+      q: t`What does Candybox cost?`,
       a: [
         <Trans>
-          Juicebox is an open protocol on Ethereum that is funded using Juicebox
+          Candybox is an open protocol on BNB Chain(BSC) that is funded using Candybox
           itself. You can check out the contractualized budget specs{' '}
           <a
-            href="https://juicebox.money/#/p/juicebox"
+            href="https://candybox.money/#/p/candybox"
             rel="noreferrer"
             target="_blank"
           >
@@ -48,12 +48,12 @@ export default function QAs() {
           .
         </Trans>,
         <Trans>
-          Projects building on Juicebox pay a 5% JBX membership fee from
-          withdrawn funds into the JuiceboxDAO treasury. Projects can then use
-          their JBX to participate in the governance of JuiceboxDAO and its
+          Projects building on Candybox pay a 5% CBX membership fee from
+          withdrawn funds into the CandyboxDAO treasury. Projects can then use
+          their CBX to participate in the governance of CandyboxDAO and its
           collective treasury, as well as redeem from its growing{' '}
           <OverflowVideoLink text={t`overflow`} />. The fee is also subject to
-          change via JBX member votes.
+          change via CBX member votes.
         </Trans>,
       ],
     },
@@ -79,11 +79,11 @@ export default function QAs() {
             rel="noreferrer"
             target="_blank"
           >
-            ERC-20 tokens
+            BEP-20 tokens
           </a>
           . Anyone who contributes funds to a project receives that project's
           tokens in return. Token balances will be tracked by the protocol until
-          ERC-20 tokens are optionally issued by the project owner.
+          BEP-20 tokens are optionally issued by the project owner.
         </Trans>,
       ],
     },
@@ -116,7 +116,7 @@ export default function QAs() {
         <Trans>
           For more info, check out this{' '}
           <a
-            href="https://www.youtube.com/watch?v=dxqc3yMqi5M&ab_channel=JuiceboxDAO"
+            href="https://www.youtube.com/watch?v=dxqc3yMqi5M&ab_channel=CandyboxDAO"
             rel="noreferrer"
             target="_blank"
           >
@@ -154,36 +154,37 @@ export default function QAs() {
       ],
     },
     {
-      q: t`Why Ethereum?`,
+      q: t`Why BNB Chain(BSC)?`,
       a: [
-        t`A mechanism like Juicebox where upfront financial commitments should be honored over time is only guaranteed within an ecosystem like Ethereum.`,
-        t`Ethereum provides a public environment where internet apps like Juicebox can run in a permission-less, trustless, and unstoppable fashion.`,
+        t`Lower Gas fee! Quicker and Faster!`,
+        t`A mechanism like Candybox where upfront financial commitments should be honored over time is only guaranteed within an ecosystem like BNB Chain (BSC).`,
+        t`BNB Chain(BSC) provides a public environment where internet apps like Candybox can run in a permission-less, trustless, and unstoppable fashion.`,
         t`This means that anyone can see the code that they're using, anyone can use the code without asking for permission, and no one can mess with the code or take it down.`,
-        t`People using Juicebox are interacting with each other through public infrastructure—not a private, profit-seeking corporate service that brokers the exchange.`,
-        t`Juicebox was built to allow people and projects to get paid for creating public art and infrastructure, as much as or more than they would working towards corporate ends. No more shady business.`,
+        t`People using Candybox are interacting with each other through public infrastructure—not a private, profit-seeking corporate service that brokers the exchange.`,
+        t`Candybox was built to allow people and projects to get paid for creating public art and infrastructure, as much as or more than they would working towards corporate ends. No more shady business.`,
       ],
     },
     {
       q: t`What's going on under the hood?`,
       a: [
-        t`This website (juicebox.money) connects to the Juicebox protocol's smart contracts, deployed on the Ethereum network. (note: anyone else can make a website that also connects to these same smart contracts. For now, don't trust any site other than this one to access the Juicebox protocol).`,
-        t`Creating a Juicebox project mints you an NFT (ERC-721) representing ownership over it. Whoever owns this NFT can configure the rules of the game and how payouts are distributed.`,
-        t`The project's tokens that are minted and distributed as a result of a received payment are ERC-20's. The amount of tokens minted and distributed are proportional to the volume of payments received, weighted by the project's discount rate over time.`,
+        t`This website (candybox.money) connects to the Candybox protocol's smart contracts, deployed on the BNB Chain(BSC) network. (note: anyone else can make a website that also connects to these same smart contracts. For now, don't trust any site other than this one to access the Candybox protocol).`,
+        t`Creating a Candybox project mints you an NFT (ERC-721) representing ownership over it. Whoever owns this NFT can configure the rules of the game and how payouts are distributed.`,
+        t`The project's tokens that are minted and distributed as a result of a received payment are BEP-20's. The amount of tokens minted and distributed are proportional to the volume of payments received, weighted by the project's discount rate over time.`,
       ],
     },
     {
-      q: t`How decentralized is Juicebox?`,
+      q: t`How decentralized is Candybox?`,
       a: [
-        t`Juicebox is a governance-minimal protocol. There are only a few levers that can be tuned, none of which impose changes for users without their consent. The Juicebox governance smart contract can adjust these levers.`,
-        t`The Juicebox protocol is governed by a community of JBX token holders who vote on proposals fortnightly.`,
+        t`Candybox is a governance-minimal protocol. There are only a few levers that can be tuned, none of which impose changes for users without their consent. The Candybox governance smart contract can adjust these levers.`,
+        t`The Candybox protocol is governed by a community of CBX token holders who vote on proposals fortnightly.`,
       ],
     },
     {
       q: t`What are the risks?`,
       a: [
-        t`Juicebox has handled tens of thousands of ETH through its protocol, and has so far had 0 security mishaps.`,
-        t`However, Juicebox is still experimental software. Although the Juicebox contract team have done their part to shape the smart contracts for public use and have tested the code thoroughly, the risk of exploits is never 0%.`,
-        t`Due to their public nature, any exploits to the contracts may have irreversible consequences, including loss of funds. Please use Juicebox with caution.`,
+        t`Candybox has handled tens of thousands of BNB through its protocol, and has so far had 0 security mishaps.`,
+        t`However, Candybox is still experimental software. Although the Candybox contract team have done their part to shape the smart contracts for public use and have tested the code thoroughly, the risk of exploits is never 0%.`,
+        t`Due to their public nature, any exploits to the contracts may have irreversible consequences, including loss of funds. Please use Candybox with caution.`,
       ],
     },
     {
@@ -196,7 +197,7 @@ export default function QAs() {
           community's confidence. Join our <JBDiscordLink text={`Discord`} />{' '}
           and check out the code on{' '}
           <a
-            href="https://github.com/jbx-protocol"
+            href="https://github.com/candyboxdao"
             rel="noreferrer"
             target="_blank"
           >
@@ -206,44 +207,44 @@ export default function QAs() {
         </Trans>,
       ],
     },
+    // {
+    //   q: t`Will it work on L2s?`,
+    //   a: [
+    //     t`That's the plan, but the core Candybox contracts will first be deployed to BNB Chain(BSC) Mainnet.`,
+    //     t`The contract team will soon start working on L2 payment terminals for Candybox projects.`,
+    //   ],
+    // },
     {
-      q: t`Will it work on L2s?`,
-      a: [
-        t`That's the plan, but the core Juicebox contracts will first be deployed to Ethereum Mainnet.`,
-        t`The contract team will soon start working on L2 payment terminals for Juicebox projects.`,
-      ],
-    },
-    {
-      q: t`Do I have to make my project open source to use Juicebox as its business model?`,
+      q: t`Do I have to make my project open source to use Candybox as its business model?`,
       img: {
         src: '/assets/cooler_if_you_did.png',
         alt: t`It'd be a lot cooler if you did`,
       },
     },
-    {
-      q: t`Who is Peel?`,
-      a: [
-        <Trans>
-          <a
-            href="https://juicebox.money/#/p/peel"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Peel
-          </a>{' '}
-          is the DAO that manages the juicebox.money frontend interface. You can
-          reach out to Peel either through the{' '}
-          <a
-            href="https://discord.gg/XvmfY4Hkcz"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Peel Discord
-          </a>{' '}
-          or <JBDiscordLink text={`Juicebox's Discord`} />.
-        </Trans>,
-      ],
-    },
+    // {
+    //   q: t`Who is Peel?`,
+    //   a: [
+    //     <Trans>
+    //       <a
+    //         href="https://candybox.money/#/p/peel"
+    //         rel="noreferrer"
+    //         target="_blank"
+    //       >
+    //         Peel
+    //       </a>{' '}
+    //       is the DAO that manages the candybox.money frontend interface. You can
+    //       reach out to Peel either through the{' '}
+    //       <a
+    //         href="https://discord.gg/XvmfY4Hkcz"
+    //         rel="noreferrer"
+    //         target="_blank"
+    //       >
+    //         Peel Discord
+    //       </a>{' '}
+    //       or <JBDiscordLink text={`Candybox's Discord`} />.
+    //     </Trans>,
+    //   ],
+    // },
     {
       q: t`How do I create a project?`,
       a: [
@@ -251,7 +252,7 @@ export default function QAs() {
           If you're interested in creating a project but still confused on how
           to get started, consider watching this{' '}
           <a
-            href="https://www.youtube.com/watch?v=R43XqPriS5M&ab_channel=JuiceboxDAO"
+            href="https://www.youtube.com/watch?v=R43XqPriS5M&ab_channel=CandyboxDAO"
             rel="noreferrer"
             target="_blank"
           >

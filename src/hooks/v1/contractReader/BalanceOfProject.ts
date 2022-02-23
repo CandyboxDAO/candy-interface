@@ -5,7 +5,7 @@ import { bigNumbersDiff } from 'utils/bigNumbers'
 
 import useContractReader from './ContractReader'
 
-/** Returns balance in ETH of project with `projectId`. */
+/** Returns balance in BNB of project with `projectId`. */
 export default function useBalanceOfProject(
   projectId: BigNumberish | undefined,
   terminalName: V1TerminalName | undefined,

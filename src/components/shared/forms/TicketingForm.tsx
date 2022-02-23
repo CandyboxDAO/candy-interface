@@ -53,7 +53,7 @@ export default function TicketingForm({
         </p>
         <p>
           <Trans>
-            You'll be able to issue ERC-20 tokens once your project contract has
+            You'll be able to issue BEP-20 tokens once your project contract has
             been deployed. Until then, the protocol will track token balances,
             allowing your supporters to earn tokens and redeem for overflow in
             the meantime.
@@ -89,7 +89,7 @@ export default function TicketingForm({
           onModsChanged={setMods}
           formItemProps={{
             label: t`Reserved token allocation (optional)`,
-            extra: t`Allocate a portion of your project's reserved tokens to other Ethereum wallets or Juicebox projects.`,
+            extra: t`Allocate a portion of your project's reserved tokens to other BNB Chain(BSC) wallets or Candybox projects.`,
           }}
           reservedRate={reservedRate}
         />

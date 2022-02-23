@@ -1,20 +1,20 @@
-# juice-interface
+# candy-interface
 
-Juicebox frontend application.
+Candybox frontend application.
 
-- Mainnet: https://juicebox.money
-- Rinkeby: https://rinkeby.juicebox.money
+- Mainnet: https://candybox.money
+- Rinkeby: https://rinkeby.candybox.money
 
 ## Suggest a feature
 
 Have an idea or suggestion? Create a
-[feature request](https://github.com/jbx-protocol/juice-interface/issues/new?assignees=&labels=idea&template=feature_request.md&title=%5BIDEA%5D+)
-or mention it in the [Discord](https://discord.gg/6jXrJSyDFf).
+[feature request](https://github.com/candyboxdao/candy-interface/issues/new?assignees=&labels=idea&template=feature_request.md&title=%5BIDEA%5D+)
+or mention it in the [Discord](https://discord.gg/DCUmdwJemm).
 
 ## Report a bug
 
 Notice something broken? Create a
-[bug report](https://github.com/jbx-protocol/juice-interface/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D+).
+[bug report](https://github.com/candyboxdao/candy-interface/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D+).
 
 ## Development
 
@@ -35,7 +35,7 @@ Notice something broken? Create a
 
 ### Setup
 
-`juicebox-interface` relies on a number of services for development. Create an
+`candybox-interface` relies on a number of services for development. Create an
 account for each of the following services:
 
 - [Infura](https://infura.io)
@@ -47,30 +47,30 @@ development.
 
 #### Infura
 
-Juicebox uses [Infura](https://infura.io) to connect to an Ethereum network
+Candybox uses [Infura](https://infura.io) to connect to an BNB Chain (BSC) network
 (mainnet, or one of the testnets).
 
 Take the following steps to create an Infura project for local development:
 
 1. Select **Create New Project** to begin creating a new Infura project.
-1. Select the **Ethereum** option from the **Product** dropdown.
-1. Enter a **Name** (for example, `juicebox-local`).
+1. Select the **BNB Chain (BSC)** option from the **Product** dropdown.
+1. Enter a **Name** (for example, `candybox-local`).
 1. Select **Create** to create the project.
 
 Next, copy the following fields into your `.env` file:
 
 - **Project ID**. In the `.env` file, copy the **Project ID** into the
   `REACT_APP_INFURA_ID` variable.
-- **Endpoint**. This is the Ethereum network that will be used for testing. If
+- **Endpoint**. This is the BNB Chain (BSC) network that will be used for testing. If
   you don't know which endpoint to use, select **mainnet**. In the `.env` file,
   copy the network name (e.g. 'mainnet', not the url) into the `REACT_APP_INFURA_NETWORK` variable.
 
 #### Piñata
 
-Juicebox uses [Piñata](https://pinata.cloud) to store project metadata. Juicebox
+Candybox uses [Piñata](https://pinata.cloud) to store project metadata. Candybox
 projects set a name, description, logo, and other details when creating the
 project. These details are saved on IPFS as a JSON file using Piñata, and the
-CID gets stored on-chain with the Juicebox project.
+CID gets stored on-chain with the Candybox project.
 
 Take the following steps to set up Piñata for local development:
 
@@ -85,7 +85,7 @@ Take the following steps to set up Piñata for local development:
 
 #### Blocknative
 
-Juicebox uses [Blocknative](https://www.blocknative.com) to onboard users by
+Candybox uses [Blocknative](https://www.blocknative.com) to onboard users by
 enabling wallet selection, connection, wallet checks, and real-time state
 updates.
 
@@ -123,7 +123,7 @@ to different chains:
 ## Deployment
 
 Frontend application(s) are deployed automatically on pushes to `main` using
-[Fleek](https://app.fleek.co/#/sites/juicebox-kovan).
+[Fleek](https://app.fleek.co/#/sites/candybox-kovan).
 
 ## Theme
 
@@ -133,7 +133,7 @@ mapping style properties to any number of enumerated `ThemeOption`s. Style
 properties are defined in the [`src/constants/theme/`](src/constants/theme)
 directory. Theme styles can be accessed via `ThemeContext` defined in
 [`src/contexts/themeContext.ts`](src/contexts/themeContext.ts) (and instantiated
-in [`src/hooks/JuiceTheme.tsx`](src/hooks/JuiceTheme.tsx)), or via CSS root
+in [`src/hooks/CandyTheme.tsx`](src/hooks/CandyTheme.tsx)), or via CSS root
 variables.
 
 The app also relies on [antd](https://ant-design.gitee.io/) React components. We

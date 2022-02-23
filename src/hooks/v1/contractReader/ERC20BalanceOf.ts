@@ -6,7 +6,7 @@ import { bigNumbersDiff } from 'utils/bigNumbers'
 import useContractReader from './ContractReader'
 import useShouldUpdateTokens from './ShouldUpdateTokens'
 
-/** Returns ERC20 balance of `wallet`. Pass arguments for `projectId` and `terminalName` if the ERC20 is a project token, to update the returned value when relevant on-chain events are emitted. */
+/** Returns BEP20 balance of `wallet`. Pass arguments for `projectId` and `terminalName` if the BEP20 is a project token, to update the returned value when relevant on-chain events are emitted. */
 export default function useERC20BalanceOf(
   tokenAddress: string | undefined,
   wallet: string | undefined,

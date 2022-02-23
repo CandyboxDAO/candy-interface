@@ -9,8 +9,8 @@ export default function UntrackedErc20Notice({
     <div>
       <Trans>
         <b>Notice:</b> These balances will not reflect transfers of claimed
-        tokens because the {tokenSymbol} ERC-20 token has not yet been indexed
-        by Juicebox.
+        tokens because the {tokenSymbol} BEP-20 token has not yet been indexed
+        by Candybox.
       </Trans>
     </div>
   )

@@ -10,7 +10,8 @@ export type NetworkInfo = {
   rpcUrl: string
   faucet?: string
   price?: number
-  gasPrice?: number
+  gasPrice?: number,
+  dispalyName?:string
 }
 
 export const NETWORKS: Record<number, NetworkInfo> = {
@@ -26,14 +27,14 @@ export const NETWORKS: Record<number, NetworkInfo> = {
     color: '#ff8b9e',
     chainId: 1,
     rpcUrl: `https://mainnet.infura.io/v3/${infuraId}`,
-    blockExplorer: 'https://etherscan.io/',
+    blockExplorer: 'https://bscscan.com/',
   },
   42: {
     name: NetworkName.kovan,
     color: '#7003DD',
     chainId: 42,
     rpcUrl: `https://kovan.infura.io/v3/${infuraId}`,
-    blockExplorer: 'https://kovan.etherscan.io/',
+    blockExplorer: 'https://kovan.bscscan.com/',
     faucet: 'https://gitter.im/kovan-testnet/faucet', //https://faucet.kovan.network/
   },
   4: {
@@ -42,14 +43,14 @@ export const NETWORKS: Record<number, NetworkInfo> = {
     chainId: 4,
     rpcUrl: `https://rinkeby.infura.io/v3/${infuraId}`,
     faucet: 'https://faucet.rinkeby.io/',
-    blockExplorer: 'https://rinkeby.etherscan.io/',
+    blockExplorer: 'https://rinkeby.bscscan.com/',
   },
   3: {
     name: NetworkName.ropsten,
     color: '#F60D09',
     chainId: 3,
     faucet: 'https://faucet.ropsten.be/',
-    blockExplorer: 'https://ropsten.etherscan.io/',
+    blockExplorer: 'https://ropsten.bscscan.com/',
     rpcUrl: `https://ropsten.infura.io/v3/${infuraId}`,
   },
   5: {
@@ -57,7 +58,7 @@ export const NETWORKS: Record<number, NetworkInfo> = {
     color: '#0975F6',
     chainId: 5,
     faucet: 'https://goerli-faucet.slock.it/',
-    blockExplorer: 'https://goerli.etherscan.io/',
+    blockExplorer: 'https://goerli.bscscan.com/',
     rpcUrl: `https://goerli.infura.io/v3/${infuraId}`,
   },
   100: {
@@ -90,6 +91,22 @@ export const NETWORKS: Record<number, NetworkInfo> = {
     faucet: 'https://faucet.matic.network/',
     blockExplorer: 'https://mumbai-explorer.matic.today/',
   },
+  56: {
+    name: NetworkName.bsc,
+    dispalyName:"BNB Chain(BSC)",
+    color: '#ff8b9e',
+    chainId: 56,
+    rpcUrl: 'https://bsc-dataseed1.binance.org',
+    blockExplorer: 'https://bscscan.com/'
+  },
+  97: {
+    name: NetworkName.bscTestnet,
+    dispalyName:"BNB Chain Testnet",
+    color: '#ff8b9e',
+    chainId: 97,
+    rpcUrl: 'https://data-seed-prebsc-1-s1.binance.org:8545',
+    blockExplorer: 'https://testnet.bscscan.com/'
+  }
 }
 
 export const NETWORKS_BY_NAME = Object.values(NETWORKS).reduce(

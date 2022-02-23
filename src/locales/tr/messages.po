@@ -6,13 +6,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: tr\n"
-"Project-Id-Version: juicebox-interface\n"
+"Project-Id-Version: candybox-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2022-02-15 23:55\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: juicebox-interface\n"
+"X-Crowdin-Project: candybox-interface\n"
 "X-Crowdin-Project-ID: 492549\n"
 "X-Crowdin-Language: tr\n"
 "X-Crowdin-File: messages.po\n"
@@ -67,11 +67,11 @@ msgid "90 days"
 msgstr "90 gün"
 
 #: src/components/Projects/ArchivedProjectsMessage.tsx
-msgid "<0/> Archived projects have not been modified or deleted on the blockchain, and can still be interacted with directly through the Juicebox contracts."
-msgstr "<0/> Arşivlenen projeler blok zincirinde değiştirilmemiştir veya silinmemiştir ve yine de doğrudan Juicebox sözleşmeleri aracılığıyla etkileşime girilebilir."
+msgid "<0/> Archived projects have not been modified or deleted on the blockchain, and can still be interacted with directly through the Candybox contracts."
+msgstr "<0/> Arşivlenen projeler blok zincirinde değiştirilmemiştir veya silinmemiştir ve yine de doğrudan Candybox sözleşmeleri aracılığıyla etkileşime girilebilir."
 
 #: src/components/Projects/index.tsx
-msgid "<0/> The Juicebox protocol is open to anyone, and project configurations can vary widely. There are risks associated with interacting with all projects on the protocol. Projects built on the protocol are not endorsed or vetted by JuiceboxDAO or Peel. Do your own research and understand the risks before committing your funds."
+msgid "<0/> The Candybox protocol is open to anyone, and project configurations can vary widely. There are risks associated with interacting with all projects on the protocol. Projects built on the protocol are not endorsed or vetted by CandyboxDAO or Peel. Do your own research and understand the risks before committing your funds."
 msgstr ""
 
 #: src/components/v1/FundingCycle/Spending.tsx
@@ -83,8 +83,8 @@ msgid "<0/>{0}{1} withdrawn"
 msgstr ""
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-msgid "<0><1>This project has no overflow</1>, so you will not receive any ETH for burning tokens.</0>"
-msgstr "<0><1>Bu projede taşma bulunmadığından</1> token'ları yakma karşılığında ETH almayacaksınız.</0>"
+msgid "<0><1>This project has no overflow</1>, so you will not receive any BNB for burning tokens.</0>"
+msgstr "<0><1>Bu projede taşma bulunmadığından</1> token'ları yakma karşılığında BNB almayacaksınız.</0>"
 
 #: src/components/shared/forms/BudgetForm.tsx
 msgid "<0>Learn more</0> about funding cycle duration."
@@ -100,23 +100,23 @@ msgid "<0>Learn more</0> about overflow."
 msgstr "Taşma hakkında <0>daha fazla bilgi edinin</0>."
 
 #: src/components/v1/V1Project/modals/MigrateV1Pt1Modal.tsx
-msgid "<0>NOTE:</0> This project has a balance of 0. Projects cannot be migrated without a balance. To migrate this project, first pay it or use the button below to deposit 1 wei (0.000000000000000001 or 10<1>-18</1> ETH)."
-msgstr "<0>NOT:</0> Bu projenin bakiyesi 0. Projeler bakiye olmadan taşınamaz. Bu projeyi taşımak için önce ödemesini yapın veya 1 wei (0.00000000000000001 veya 10<1>-18</1> ETH) yatırmak için aşağıdaki butonu kullanın."
+msgid "<0>NOTE:</0> This project has a balance of 0. Projects cannot be migrated without a balance. To migrate this project, first pay it or use the button below to deposit 1 wei (0.000000000000000001 or 10<1>-18</1> BNB)."
+msgstr "<0>NOT:</0> Bu projenin bakiyesi 0. Projeler bakiye olmadan taşınamaz. Bu projeyi taşımak için önce ödemesini yapın veya 1 wei (0.00000000000000001 veya 10<1>-18</1> BNB) yatırmak için aşağıdaki butonu kullanın."
 
 #: src/components/shared/forms/RestrictedActionsForm.tsx
 msgid "<0>Note:</0> These properties will <1>not</1> be editable immediately within a funding cycle. They can only be changed for <2>upcoming</2> funding cycles."
 msgstr "<0>Not:</0> Bu özellikler, bir finansman döngüsü içinde doğrudan <1>düzenlenemez</1>. Özellikler yalnızca <2>yaklaşan</2> finansman döngüleri için değiştirilebilir."
 
 #: src/components/v1/V1Project/modals/ConfirmUnstakeTokensModal.tsx
-msgid "<0>Note:</0> Tokens cannot be claimed because no ERC20 token has been issued for this project. ERC20 tokens must be issued by the project owner."
-msgstr "<0>Not:</0> Bu proje için herhangi bir ERC20 token'ı çıkarılmadığından token'lar talep edilemez. ERC20 token'ları proje sahibi tarafından çıkarılmalıdır."
+msgid "<0>Note:</0> Tokens cannot be claimed because no BEP20 token has been issued for this project. BEP20 tokens must be issued by the project owner."
+msgstr "<0>Not:</0> Bu proje için herhangi bir BEP20 token'ı çıkarılmadığından token'lar talep edilemez. BEP20 token'ları proje sahibi tarafından çıkarılmalıdır."
 
 #: src/components/shared/UntrackedErc20Notice.tsx
-msgid "<0>Notice:</0> These balances will not reflect transfers of claimed tokens because the {tokenSymbol} ERC-20 token has not yet been indexed by Juicebox."
-msgstr "<0>Uyarı:</0> {tokenSymbol} ERC-20 token'ı henüz Juicebox tarafından dizine eklenmediğinden, bu bakiyeler talep edilen token'ların transferlerini yansıtmaz."
+msgid "<0>Notice:</0> These balances will not reflect transfers of claimed tokens because the {tokenSymbol} BEP-20 token has not yet been indexed by Candybox."
+msgstr "<0>Uyarı:</0> {tokenSymbol} BEP-20 token'ı henüz Candybox tarafından dizine eklenmediğinden, bu bakiyeler talep edilen token'ların transferlerini yansıtmaz."
 
 #: src/components/Landing/QAs.tsx
-msgid "<0>Peel</0> is the DAO that manages the juicebox.money frontend interface. You can reach out to Peel either through the <1>Peel Discord</1> or <2/>."
+msgid "<0>Peel</0> is the DAO that manages the candybox.money frontend interface. You can reach out to Peel either through the <1>Peel Discord</1> or <2/>."
 msgstr ""
 
 #: src/components/Landing/TrendingSection.tsx
@@ -128,8 +128,8 @@ msgid "<0>Your unclaimed {tokenSymbol} tokens:</0> {0}"
 msgstr "<0>Hak talebinde bulunulmamış {tokenSymbol} token'larınız:</0> {0}"
 
 #: src/components/v1/V1Project/modals/ConfirmUnstakeTokensModal.tsx
-msgid "<0>{tokenSymbol} ERC20 address:</0> <1/>"
-msgstr "<0>{tokenSymbol} ERC20 adresi:</0> <1/>"
+msgid "<0>{tokenSymbol} BEP20 address:</0> <1/>"
+msgstr "<0>{tokenSymbol} BEP20 adresi:</0> <1/>"
 
 #: src/components/shared/formItems/ProjectTwitter.tsx
 #: src/components/v1/V1Create/ConfirmDeployProject.tsx
@@ -141,8 +141,8 @@ msgid "A bonding curve rewards people who wait longer to redeem your tokens for 
 msgstr "Bağlanma eğrisi, tokenlerinizi taşma amaçlı kullanmak için daha uzun süre bekleyen insanları ödüllendirir."
 
 #: src/components/Landing/QAs.tsx
-msgid "A mechanism like Juicebox where upfront financial commitments should be honored over time is only guaranteed within an ecosystem like Ethereum."
-msgstr "Juicebox gibi, önceden yapılan finansal taahhütlerin zaman içinde yerine getirilmesi gereken bir mekanizma, yalnızca Ethereum gibi bir ekosistemde garanti edilir."
+msgid "A mechanism like Candybox where upfront financial commitments should be honored over time is only guaranteed within an ecosystem like BNB Chain (BSC)."
+msgstr "Candybox gibi, önceden yapılan finansal taahhütlerin zaman içinde yerine getirilmesi gereken bir mekanizma, yalnızca BNB Chain(BSC) gibi bir ekosistemde garanti edilir."
 
 #: src/components/Landing/QAs.tsx
 msgid "A project can choose to reserve a percentage of tokens for itself. Instead of being distributed to paying users, this percentage of tokens is instead minted for the project."
@@ -233,8 +233,8 @@ msgid "All {0} will go to the project owner:"
 msgstr "Tüm {0} proje sahibine gidecek:"
 
 #: src/components/shared/forms/TicketingForm.tsx
-msgid "Allocate a portion of your project's reserved tokens to other Ethereum wallets or Juicebox projects."
-msgstr "Projenizin ayrılan token'larının bir kısmını diğer Ethereum cüzdanlarına veya Juicebox projelerine tahsis edin."
+msgid "Allocate a portion of your project's reserved tokens to other BNB Chain(BSC) wallets or Candybox projects."
+msgstr "Projenizin ayrılan token'larının bir kısmını diğer BNB Chain(BSC) cüzdanlarına veya Candybox projelerine tahsis edin."
 
 #: src/components/shared/forms/RestrictedActionsForm.tsx
 msgid "Allow minting tokens"
@@ -303,8 +303,8 @@ msgid "Beneficiary address"
 msgstr "Faydalanıcı adresi"
 
 #: src/components/Landing/index.tsx
-msgid "Big ups to the Ethereum community for crafting the infrastructure and economy to make Juicebox possible."
-msgstr "Juicebox'ı mümkün kılan altyapı ve ekonomiyi hazırladığı için Ethereum topluluğuna selamlar."
+msgid "Big ups to the BNB Chain(BSC) community for crafting the infrastructure and economy to make Candybox possible."
+msgstr "Candybox'ı mümkün kılan altyapı ve ekonomiyi hazırladığı için BNB Chain(BSC) topluluğuna selamlar."
 
 #: src/components/v1/V1Project/modals/DownloadParticipantsModal.tsx
 msgid "Block number"
@@ -371,8 +371,8 @@ msgid "Cancel"
 msgstr "İptal"
 
 #: src/components/v1/V1Project/Rewards/index.tsx
-msgid "Cannot redeem tokens for ETH because this project has no overflow."
-msgstr "Bu projede taşma bulunmadığından ETH için token talep edilemez."
+msgid "Cannot redeem tokens for BNB because this project has no overflow."
+msgstr "Bu projede taşma bulunmadığından BNB için token talep edilemez."
 
 #: src/components/v1/V1Create/ProjectForm.tsx
 msgid "Changes to these attributes can be made at any time and will be applied to your project immediately."
@@ -385,16 +385,16 @@ msgid ""
 msgstr ""
 
 #: src/components/v1/V1Project/modals/ConfirmPayOwnerModal/index.tsx
-msgid "Check this to mint {tokenSymbol} ERC20 to your wallet. Leave unchecked to have your token balance tracked by Juicebox, saving gas on this transaction. You can always claim your ERC20 tokens later."
-msgstr "Cüzdanınıza {tokenSymbol} ERC20 basmak için burayı işaretleyin. Token bakiyenizin Juicebox tarafından takip edilmesini sağlamak için işaretlemeden bırakın ve bu işlemde gazdan tasarruf edin. ERC20 token'larınızı daha sonra her zaman talep edebilirsiniz."
+msgid "Check this to mint {tokenSymbol} BEP20 to your wallet. Leave unchecked to have your token balance tracked by Candybox, saving gas on this transaction. You can always claim your BEP20 tokens later."
+msgstr "Cüzdanınıza {tokenSymbol} BEP20 basmak için burayı işaretleyin. Token bakiyenizin Candybox tarafından takip edilmesini sağlamak için işaretlemeden bırakın ve bu işlemde gazdan tasarruf edin. BEP20 token'larınızı daha sonra her zaman talep edebilirsiniz."
 
 #: src/components/v1/V1Project/Rewards/index.tsx
-msgid "Claim {0} as ERC20"
-msgstr "{0} talebini ERC20 olarak al"
+msgid "Claim {0} as BEP20"
+msgstr "{0} talebini BEP20 olarak al"
 
 #: src/components/v1/V1Project/modals/ConfirmUnstakeTokensModal.tsx
-msgid "Claiming {tokenSymbol} tokens will convert your {tokenSymbol} balance to ERC20 tokens and mint them to your wallet."
-msgstr "{tokenSymbol} token'larını talep etmek, {tokenSymbol} bakiyenizi ERC20 token'larına dönüştürecek ve bunları cüzdanınıza basacaktır."
+msgid "Claiming {tokenSymbol} tokens will convert your {tokenSymbol} balance to BEP20 tokens and mint them to your wallet."
+msgstr "{tokenSymbol} token'larını talep etmek, {tokenSymbol} bakiyenizi BEP20 token'larına dönüştürecek ve bunları cüzdanınıza basacaktır."
 
 #: src/components/v1/V1Project/modals/DownloadParticipantsModal.tsx
 msgid "Close"
@@ -445,8 +445,8 @@ msgid "Create project"
 msgstr "Proje oluştur"
 
 #: src/components/Landing/QAs.tsx
-msgid "Creating a Juicebox project mints you an NFT (ERC-721) representing ownership over it. Whoever owns this NFT can configure the rules of the game and how payouts are distributed."
-msgstr "Bir Juicebox projesi oluşturmak, size üzerinde sahipliğinizi temsil eden bir NFT (ERC-721) verir. Bu NFT'ye sahip olan kişi, oyunun kurallarını ve ödemelerin nasıl dağıtılacağını yapılandırabilir."
+msgid "Creating a Candybox project mints you an NFT (ERC-721) representing ownership over it. Whoever owns this NFT can configure the rules of the game and how payouts are distributed."
+msgstr "Bir Candybox projesi oluşturmak, size üzerinde sahipliğinizi temsil eden bir NFT (ERC-721) verir. Bu NFT'ye sahip olan kişi, oyunun kurallarını ve ödemelerin nasıl dağıtılacağını yapılandırabilir."
 
 #: src/components/v1/V1Project/FundingCycles/index.tsx
 msgid "Current"
@@ -525,12 +525,12 @@ msgid "Discount rate disabled while funding cycle duration is 0."
 msgstr "Finansman döngüsü süresi 0 iken indirim oranı devre dışı bırakılır."
 
 #: src/components/v1/V1Project/modals/BalancesModal.tsx
-msgid "Display ERC20 tokens and other Juicebox project tokens that are in this project's owner's wallet."
-msgstr "Bu proje sahibinin cüzdanında bulunan ERC20 token'larını ve diğer Juicebox proje token'larını görüntüleyin."
+msgid "Display BEP20 tokens and other Candybox project tokens that are in this project's owner's wallet."
+msgstr "Bu proje sahibinin cüzdanında bulunan BEP20 token'larını ve diğer Candybox proje token'larını görüntüleyin."
 
 #: src/components/shared/forms/PayModsForm.tsx
-msgid "Distribute available funds to other Ethereum wallets or Juicebox projects as payouts. Use this to pay contributors, charities, Juicebox projects you depend on, or anyone else. Funds are distributed whenever a withdrawal is made from your project."
-msgstr "Uygun fonları diğer Ethereum cüzdanlarına veya Juicebox projelerine ödeme olarak dağıtın. Bunu katılımcılara, yardım kuruluşlarına, bağlı olduğunuz Juicebox projelerine veya başkalarına ödeme yapmak için kullanın. Projelerinizden para çekildiğinde fonlar dağıtılır."
+msgid "Distribute available funds to other BNB Chain(BSC) wallets or Candybox projects as payouts. Use this to pay contributors, charities, Candybox projects you depend on, or anyone else. Funds are distributed whenever a withdrawal is made from your project."
+msgstr "Uygun fonları diğer BNB Chain(BSC) cüzdanlarına veya Candybox projelerine ödeme olarak dağıtın. Bunu katılımcılara, yardım kuruluşlarına, bağlı olduğunuz Candybox projelerine veya başkalarına ödeme yapmak için kullanın. Projelerinizden para çekildiğinde fonlar dağıtılır."
 
 #: src/components/v1/FundingCycle/Spending.tsx
 msgid "Distribute funds"
@@ -545,8 +545,8 @@ msgid "Distributed"
 msgstr "Dağıtıldı"
 
 #: src/components/Landing/QAs.tsx
-msgid "Do I have to make my project open source to use Juicebox as its business model?"
-msgstr "Juicebox'ı iş modeli olarak kullanmak için projemi açık kaynak yapmak zorunda mıyım?"
+msgid "Do I have to make my project open source to use Candybox as its business model?"
+msgstr "Candybox'ı iş modeli olarak kullanmak için projemi açık kaynak yapmak zorunda mıyım?"
 
 #: src/components/Navbar/MenuItems.tsx
 msgid "Docs"
@@ -575,7 +575,7 @@ msgid "Download CSV of {0} holders"
 msgstr "{0} sahipleri CSV'sini indirin"
 
 #: src/components/Landing/QAs.tsx
-msgid "Due to their public nature, any exploits to the contracts may have irreversible consequences, including loss of funds. Please use Juicebox with caution."
+msgid "Due to their public nature, any exploits to the contracts may have irreversible consequences, including loss of funds. Please use Candybox with caution."
 msgstr ""
 
 #: src/components/v1/FundingCycle/FundingCycleDetails.tsx
@@ -585,15 +585,15 @@ msgid "Duration"
 msgstr "Süre"
 
 #: src/components/v1/V1Project/Rewards/index.tsx
-msgid "ERC20"
-msgstr "ERC20"
+msgid "BEP20"
+msgstr "BEP20"
 
 #: src/components/Landing/index.tsx
-msgid "ERC20 community tokens"
-msgstr "ERC20 topluluk tokenleri"
+msgid "BEP20 community tokens"
+msgstr "BEP20 topluluk tokenleri"
 
 #: src/components/Landing/QAs.tsx
-msgid "Each project has its own <0>ERC-20 tokens</0>. Anyone who contributes funds to a project receives that project's tokens in return. Token balances will be tracked by the protocol until ERC-20 tokens are optionally issued by the project owner."
+msgid "Each project has its own <0>BEP-20 tokens</0>. Anyone who contributes funds to a project receives that project's tokens in return. Token balances will be tracked by the protocol until BEP-20 tokens are optionally issued by the project owner."
 msgstr ""
 
 #: src/components/shared/TicketModsList.tsx
@@ -630,11 +630,11 @@ msgid "End"
 msgstr "Son"
 
 #: src/components/Landing/index.tsx
-msgid "Ethereum protocols and DAOs"
-msgstr "Ethereum protokolleri ve DAO'lar"
+msgid "BSC protocols and DAOs"
+msgstr "BNB Chain(BSC) protokolleri ve DAO'lar"
 
 #: src/components/Landing/QAs.tsx
-msgid "Ethereum provides a public environment where internet apps like Juicebox can run in a permission-less, trustless, and unstoppable fashion."
+msgid "BNB Chain(BSC) provides a public environment where internet apps like Candybox can run in a permission-less, trustless, and unstoppable fashion."
 msgstr ""
 
 #: src/components/Navbar/MenuItems.tsx
@@ -658,7 +658,7 @@ msgid "For more info, check out this <0>short video</0> on bonding curves."
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "For users paying through your app, you should route those funds through the Juicebox smart contracts so they receive tokens in return."
+msgid "For users paying through your app, you should route those funds through the Candybox smart contracts so they receive tokens in return."
 msgstr ""
 
 #: src/components/v1/FundingCycle/Spending.tsx
@@ -715,8 +715,8 @@ msgid "Give us your feedback"
 msgstr ""
 
 #: src/components/shared/EtherscanLink.tsx
-msgid "Go to Etherscan"
-msgstr "Etherscan'e git"
+msgid "Go to BscScan"
+msgstr "BscScan'e git"
 
 #: src/components/v1/V1Create/ConfirmDeployProject.tsx
 msgid "Handle"
@@ -743,11 +743,11 @@ msgid "Holdings"
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "How decentralized is Juicebox?"
-msgstr "Juicebox ne kadar merkeziyetsiz?"
+msgid "How decentralized is Candybox?"
+msgstr "Candybox ne kadar merkeziyetsiz?"
 
 #: src/components/v1/V1Project/modals/FeedbackPromptModal.tsx
-msgid "How did we do? We'd love to get your feedback so we can make creating Juicebox projects as juicy as possible!"
+msgid "How did we do? We'd love to get your feedback so we can make creating Candybox projects as juicy as possible!"
 msgstr ""
 
 #: src/components/Projects/ArchivedProjectsMessage.tsx
@@ -771,7 +771,7 @@ msgid "How your project will distribute funds."
 msgstr "Projenizin fonları nasıl dağıtacağı."
 
 #: src/components/Landing/QAs.tsx
-msgid "However, Juicebox is still experimental software. Although the Juicebox contract team have done their part to shape the smart contracts for public use and have tested the code thoroughly, the risk of exploits is never 0%."
+msgid "However, Candybox is still experimental software. Although the Candybox contract team have done their part to shape the smart contracts for public use and have tested the code thoroughly, the risk of exploits is never 0%."
 msgstr ""
 
 #: src/components/v1/V1Project/modals/PayWarningModal.tsx
@@ -787,8 +787,8 @@ msgid "If locked, this can't be edited or removed until the lock expires or the 
 msgstr "Kilitliyse kilidin süresi dolana veya finansman döngüsü yeniden yapılandırılana kadar düzenlenemez veya kaldırılamaz."
 
 #: src/components/Projects/ArchivedProjectsMessage.tsx
-msgid "If you have a project you'd like to archive, let the Juicebox team know in Discord."
-msgstr "Arşivlemek istediğiniz bir proje varsa Discord'da Juicebox ekibine bildirin."
+msgid "If you have a project you'd like to archive, let the Candybox team know in Discord."
+msgstr "Arşivlemek istediğiniz bir proje varsa Discord'da Candybox ekibine bildirin."
 
 #: src/components/Landing/QAs.tsx
 msgid ""
@@ -807,8 +807,8 @@ msgstr "Hak talebinde bulunmanız gerekip gerekmediğinden emin değilseniz muht
 
 #: src/components/v1/V1Project/BalanceTimeline.tsx
 #: src/components/v1/V1Project/Paid.tsx
-msgid "In Juicebox"
-msgstr "Juicebox'da"
+msgid "In Candybox"
+msgstr "Candybox'da"
 
 #: src/components/v1/V1Project/Paid.tsx
 msgid "In wallet"
@@ -826,16 +826,16 @@ msgstr "Bağımsız sanatçılar, geliştiriciler, yaratıcılar"
 
 #: src/components/v1/V1Project/Rewards/IssueTickets.tsx
 #: src/components/v1/V1Project/Rewards/IssueTickets.tsx
-msgid "Issue ERC-20 token"
-msgstr "ERC-20 token'ı çıkart"
+msgid "Issue BEP-20 token"
+msgstr "BEP-20 token'ı çıkart"
 
 #: src/components/v1/V1Project/Rewards/IssueTickets.tsx
-msgid "Issue an ERC-20 to be used as this project's token. Once issued, anyone can claim their existing token balance in the new token."
+msgid "Issue an BEP-20 to be used as this project's token. Once issued, anyone can claim their existing token balance in the new token."
 msgstr ""
 
 #: src/components/v1/V1Project/Rewards/IssueTickets.tsx
-msgid "Issue an ERC-20 token for this project. Once issued, anyone can claim their existing token balance in the new token."
-msgstr "Bu proje için bir ERC-20 token'ı çıkarın. Bir kere çıkarıldıktan sonra, herkes mevcut token bakiyesini yeni token cinsinden talep edebilir."
+msgid "Issue an BEP-20 token for this project. Once issued, anyone can claim their existing token balance in the new token."
+msgstr "Bu proje için bir BEP-20 token'ı çıkarın. Bir kere çıkarıldıktan sonra, herkes mevcut token bakiyesini yeni token cinsinden talep edebilir."
 
 #: src/components/v1/FundingCycle/FundingCycleDetails.tsx
 msgid "Issue rate"
@@ -854,28 +854,28 @@ msgid "It'd be a lot cooler if you did"
 msgstr "Yapsan çok kıyak olur"
 
 #: src/components/v1/FundingCycle/modals/WithdrawModal.tsx
-msgid "JBX Fee ({0}%):"
-msgstr "JBX Ücreti (%{0}):"
+msgid "CBX Fee ({0}%):"
+msgstr "CBX Ücreti (%{0}):"
 
 #: src/components/v1/V1Project/modals/PayWarningModal.tsx
-msgid "Juicebox contracts"
-msgstr "Juicebox sözleşmeleri"
+msgid "Candybox contracts"
+msgstr "Candybox sözleşmeleri"
 
 #: src/components/Landing/QAs.tsx
-msgid "Juicebox has handled tens of thousands of ETH through its protocol, and has so far had 0 security mishaps."
+msgid "Candybox has handled tens of thousands of BNB through its protocol, and has so far had 0 security mishaps."
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "Juicebox is a governance-minimal protocol. There are only a few levers that can be tuned, none of which impose changes for users without their consent. The Juicebox governance smart contract can adjust these levers."
-msgstr "Juicebox, yönetişim açısından minimal bir protokoldür. Ayarlanabilecek yalnızca birkaç kol vardır ve bunların hiçbirinde kullanıcıların rızası olmadan değişiklik yapılamaz. Juicebox yönetişim akıllı sözleşmesi bu kolları ayarlayabilir."
+msgid "Candybox is a governance-minimal protocol. There are only a few levers that can be tuned, none of which impose changes for users without their consent. The Candybox governance smart contract can adjust these levers."
+msgstr "Candybox, yönetişim açısından minimal bir protokoldür. Ayarlanabilecek yalnızca birkaç kol vardır ve bunların hiçbirinde kullanıcıların rızası olmadan değişiklik yapılamaz. Candybox yönetişim akıllı sözleşmesi bu kolları ayarlayabilir."
 
 #: src/components/Landing/QAs.tsx
-msgid "Juicebox is an open protocol on Ethereum that is funded using Juicebox itself. You can check out the contractualized budget specs <0>here</0>."
+msgid "Candybox is an open protocol on BNB Chain(BSC) that is funded using Candybox itself. You can check out the contractualized budget specs <0>here</0>."
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "Juicebox was built to allow people and projects to get paid for creating public art and infrastructure, as much as or more than they would working towards corporate ends. No more shady business."
-msgstr "Juicebox, insanların ve projelerin kamusal sanat ve altyapı oluşturmak için kurumsal amaçlara yönelik çalıştıkları kadar veya daha fazla para almalarına izin vermek için inşa edildi. Artık karanlık iş yok."
+msgid "Candybox was built to allow people and projects to get paid for creating public art and infrastructure, as much as or more than they would working towards corporate ends. No more shady business."
+msgstr "Candybox, insanların ve projelerin kamusal sanat ve altyapı oluşturmak için kurumsal amaçlara yönelik çalıştıkları kadar veya daha fazla para almalarına izin vermek için inşa edildi. Artık karanlık iş yok."
 
 #: src/components/v1/V1Project/modals/ParticipantsModal.tsx
 msgid "Last paid"
@@ -932,8 +932,8 @@ msgid "Memo"
 msgstr "Not"
 
 #: src/components/v1/V1Project/modals/MigrateV1Pt1Modal.tsx
-msgid "Migrate to Juicebox V1.1"
-msgstr "Juicebox V1.1'e geçiş yapın"
+msgid "Migrate to Candybox V1.1"
+msgstr "Candybox V1.1'e geçiş yapın"
 
 #: src/components/v1/V1Project/modals/MigrateV1Pt1Modal.tsx
 msgid "Mint project tokens on demand"
@@ -1001,8 +1001,8 @@ msgid "Not set"
 msgstr "Ayarlanmadı"
 
 #: src/components/Landing/index.tsx
-msgid "Note: Juicebox is new, unaudited, and not guaranteed to work perfectly. Before spending money, do your own research: <0>ask questions</0>, <1>check out the code</1>, and understand the risks!"
-msgstr "Not: Juicebox yenidir, denetlenmemiştir ve kusursuz çalışması garanti edilmez. Para harcamadan önce kendi araştırmanızı yapın: sorular sorun, kodu inceleyin ve riskleri anlayın!"
+msgid "Note: Candybox is new, unaudited, and not guaranteed to work perfectly. Before spending money, do your own research: <0>ask questions</0>, <1>check out the code</1>, and understand the risks!"
+msgstr "Not: Candybox yenidir, denetlenmemiştir ve kusursuz çalışması garanti edilmez. Para harcamadan önce kendi araştırmanızı yapın: sorular sorun, kodu inceleyin ve riskleri anlayın!"
 
 #: src/components/v1/V1Project/modals/ConfirmPayOwnerModal/index.tsx
 msgid "Notice from {0}:"
@@ -1095,16 +1095,16 @@ msgid "Payouts (optional)"
 msgstr "Ödemeler (isteğe bağlı)"
 
 #: src/components/shared/formItems/ProjectName.tsx
-msgid "Peach's Juicebox Stand"
-msgstr "Peach'in Juicebox standı"
+msgid "Peach's Candybox Stand"
+msgstr "Peach'in Candybox standı"
 
 #: src/components/Navbar/MenuItems.tsx
 msgid "Peel"
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "People using Juicebox are interacting with each other through public infrastructure—not a private, profit-seeking corporate service that brokers the exchange."
-msgstr "Juicebox'ı kullanan kişiler, borsaya aracılık eden özel, kâr amaçlı kurumsal bir hizmet değil, kamu altyapısı aracılığıyla birbirleriyle etkileşime giriyor."
+msgid "People using Candybox are interacting with each other through public infrastructure—not a private, profit-seeking corporate service that brokers the exchange."
+msgstr "Candybox'ı kullanan kişiler, borsaya aracılık eden özel, kâr amaçlı kurumsal bir hizmet değil, kamu altyapısı aracılığıyla birbirleriyle etkileşime giriyor."
 
 #: src/components/shared/modals/ReservedTokenReceiverModal.tsx
 msgid "Percent allocation"
@@ -1119,8 +1119,8 @@ msgid "Podcast"
 msgstr "Podcast"
 
 #: src/components/Landing/index.tsx
-msgid "Powered by public smart contracts on <0>Ethereum</0>."
-msgstr "Ethereum'daki halka açık akıllı sözleşmelerle desteklenmektedir."
+msgid "Powered by public smart contracts on <0>BNB Chain (BSC)</0>."
+msgstr "BNB Chain (BSC)'daki halka açık akıllı sözleşmelerle desteklenmektedir."
 
 #: src/components/v1/V1Create/index.tsx
 msgid "Preview"
@@ -1186,7 +1186,7 @@ msgid "Projects"
 msgstr "Projeler"
 
 #: src/components/Landing/QAs.tsx
-msgid "Projects building on Juicebox pay a 5% JBX membership fee from withdrawn funds into the JuiceboxDAO treasury. Projects can then use their JBX to participate in the governance of JuiceboxDAO and its collective treasury, as well as redeem from its growing <0/>. The fee is also subject to change via JBX member votes."
+msgid "Projects building on Candybox pay a 5% CBX membership fee from withdrawn funds into the CandyboxDAO treasury. Projects can then use their CBX to participate in the governance of CandyboxDAO and its collective treasury, as well as redeem from its growing <0/>. The fee is also subject to change via CBX member votes."
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
@@ -1197,12 +1197,12 @@ msgid ""
 msgstr ""
 
 #: src/components/Projects/index.tsx
-msgid "Projects on Juicebox"
-msgstr "Juicebox'taki projeler"
+msgid "Projects on Candybox"
+msgstr "Candybox'taki projeler"
 
 #: src/components/Landing/index.tsx
-msgid "Projects using Juicebox"
-msgstr "Juicebox kullanan projeler"
+msgid "Projects using Candybox"
+msgstr "Candybox kullanan projeler"
 
 #: src/components/shared/forms/TicketingForm.tsx
 msgid "Projects using a reserved rate of {reservedRateRiskyMin}% or more will appear risky to contributors, as a relatively small number of tokens will be received in exchange for paying your project."
@@ -1217,7 +1217,7 @@ msgid "Rankings based on number of contributions and volume gained in the last {
 msgstr "Katkı sayısına ve son {trendingWindow} gün içinde kazanılan hacme dayalı sıralamalar. <0>Kodu gör</0>"
 
 #: src/components/v1/V1Project/modals/ConfirmPayOwnerModal/index.tsx
-msgid "Receive ERC20"
+msgid "Receive BEP20"
 msgstr "ER20 alın"
 
 #: src/components/v1/V1Project/Pay/PayInputSubText.tsx
@@ -1256,11 +1256,11 @@ msgid "Redeem"
 msgstr "Talep edin"
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-msgid "Redeem {0} {tokensTextShort} for ETH"
+msgid "Redeem {0} {tokensTextShort} for BNB"
 msgstr ""
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-msgid "Redeem {tokensTextLong} for ETH"
+msgid "Redeem {tokensTextLong} for BNB"
 msgstr ""
 
 #: src/components/Landing/index.tsx
@@ -1317,8 +1317,8 @@ msgstr "Kısıtlanmış eylemler"
 
 #: src/components/v1/V1Project/Rewards/index.tsx
 #: src/components/v1/V1Project/Rewards/index.tsx
-msgid "Return my ETH"
-msgstr "ETH'mi iade et"
+msgid "Return my BNB"
+msgstr "BNB'mi iade et"
 
 #: src/components/v1/V1Create/index.tsx
 msgid "Review & Deploy"
@@ -1419,8 +1419,8 @@ msgid "Set the length of your funding cycles."
 msgstr "Finansman döngülerinizin süresini belirleyin."
 
 #: src/components/Landing/index.tsx
-msgid "Should you Juicebox?"
-msgstr "Juicebox’a katılmalı mısın?"
+msgid "Should you Candybox?"
+msgstr "Candybox’a katılmalı mısın?"
 
 #: src/components/v1/V1Create/ConfirmDeployProject.tsx
 msgid "Since you have not set a funding duration, changes to these settings will be applied immediately."
@@ -1474,15 +1474,15 @@ msgid "Text displayed on your project's \"pay\" button. Leave this blank to use 
 msgstr "Projenizin \"Ödeme\" butonunda görüntülenen metin. Varsayılanı kullanmak için boş bırakın."
 
 #: src/components/Landing/QAs.tsx
-msgid "That's the plan, but the core Juicebox contracts will first be deployed to Ethereum Mainnet."
-msgstr "Plan bu, ancak çekirdek Juicebox sözleşmeleri önce Ethereum Mainnet'e dağıtılacak."
+msgid "That's the plan, but the core Candybox contracts will first be deployed to BNB Chain(BSC) Mainnet."
+msgstr "Plan bu, ancak çekirdek Candybox sözleşmeleri önce BNB Chain(BSC) Mainnet'e dağıtılacak."
 
 #: src/components/v1/V1Create/index.tsx
-msgid "The JBX protocol is unaudited, and projects built on it may be vulnerable to bugs or exploits. Be smart!"
-msgstr "JBX protokolü denetlenmez ve bunun üzerine inşa edilen projeler hatalara veya açıklardan yararlanmaya karşı savunmasız olabilir. Dikkatli olunmalıdır!"
+msgid "The CBX protocol is unaudited, and projects built on it may be vulnerable to bugs or exploits. Be smart!"
+msgstr "CBX protokolü denetlenmez ve bunun üzerine inşa edilen projeler hatalara veya açıklardan yararlanmaya karşı savunmasız olabilir. Dikkatli olunmalıdır!"
 
 #: src/components/Landing/QAs.tsx
-msgid "The Juicebox protocol is governed by a community of JBX token holders who vote on proposals fortnightly."
+msgid "The Candybox protocol is governed by a community of CBX token holders who vote on proposals fortnightly."
 msgstr ""
 
 #: src/components/shared/forms/RulesForm.tsx
@@ -1498,15 +1498,15 @@ msgid "The address that should receive the tokens."
 msgstr "Token'ları alması gereken adres."
 
 #: src/components/v1/V1Project/Paid.tsx
-msgid "The amount that has been distributed from the Juicebox balance in this funding cycle, out of the current funding target. No more than the funding target can be distributed in a single funding cycle—any remaining ETH in Juicebox is overflow, until the next cycle begins."
-msgstr "Mevcut finansman hedefinin dışında, bu finansman döngüsünde Juicebox bakiyesinden dağıtılan miktar. Tek bir finansman döngüsünde finansman hedefinden daha fazlası dağıtılamaz; Juicebox'ta kalan ETH, bir sonraki döngü başlayana kadar taşma durumundadır."
+msgid "The amount that has been distributed from the Candybox balance in this funding cycle, out of the current funding target. No more than the funding target can be distributed in a single funding cycle—any remaining BNB in Candybox is overflow, until the next cycle begins."
+msgstr "Mevcut finansman hedefinin dışında, bu finansman döngüsünde Candybox bakiyesinden dağıtılan miktar. Tek bir finansman döngüsünde finansman hedefinden daha fazlası dağıtılamaz; Candybox'ta kalan BNB, bir sonraki döngü başlayana kadar taşma durumundadır."
 
 #: src/components/v1/V1Project/Paid.tsx
-msgid "The balance of the wallet that owns this Juicebox project."
-msgstr "Bu Juicebox projesinin sahibi olan cüzdanın bakiyesi."
+msgid "The balance of the wallet that owns this Candybox project."
+msgstr "Bu Candybox projesinin sahibi olan cüzdanın bakiyesi."
 
 #: src/components/v1/V1Project/Paid.tsx
-msgid "The balance of this project in the Juicebox contract."
+msgid "The balance of this project in the Candybox contract."
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
@@ -1514,11 +1514,11 @@ msgid "The code could always use more eyes and more critique to further the comm
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "The contract team will soon start working on L2 payment terminals for Juicebox projects."
+msgid "The contract team will soon start working on L2 payment terminals for Candybox projects."
 msgstr ""
 
 #: src/components/v1/FundingCycle/Spending.tsx
-msgid "The funds available to withdraw for this funding cycle after the {0}% JBX fee is subtracted. This number won't roll over to the next funding cycle, so funds should be withdrawn before it ends."
+msgid "The funds available to withdraw for this funding cycle after the {0}% CBX fee is subtracted. This number won't roll over to the next funding cycle, so funds should be withdrawn before it ends."
 msgstr ""
 
 #: src/components/Landing/index.tsx
@@ -1542,7 +1542,7 @@ msgid "The project's entire balance will be considered overflow."
 msgstr "Projenin tüm bakiyesi taşma olarak kabul edilecektir."
 
 #: src/components/Landing/QAs.tsx
-msgid "The project's tokens that are minted and distributed as a result of a received payment are ERC-20's. The amount of tokens minted and distributed are proportional to the volume of payments received, weighted by the project's discount rate over time."
+msgid "The project's tokens that are minted and distributed as a result of a received payment are BEP-20's. The amount of tokens minted and distributed are proportional to the volume of payments received, weighted by the project's discount rate over time."
 msgstr ""
 
 #: src/components/shared/formItems/ProjectDiscountRate.tsx
@@ -1555,12 +1555,12 @@ msgid "The rest is left to share between token hodlers."
 msgstr "Gerisi token sahipleri arasında paylaşılmaya bırakılır."
 
 #: src/components/v1/V1Project/Paid.tsx
-msgid "The target for this funding cycle is 0, meaning all funds in Juicebox are currently considered overflow. Overflow can be redeemed by token holders, but not distributed."
-msgstr "Bu finansman döngüsü için hedef 0'dır, yani Juicebox'taki tüm fonlar şu anda taşma olarak kabul edilir. Taşma, token sahipleri tarafından talep edilerek kullanılabilir, ancak dağıtılamaz."
+msgid "The target for this funding cycle is 0, meaning all funds in Candybox are currently considered overflow. Overflow can be redeemed by token holders, but not distributed."
+msgstr "Bu finansman döngüsü için hedef 0'dır, yani Candybox'taki tüm fonlar şu anda taşma olarak kabul edilir. Taşma, token sahipleri tarafından talep edilerek kullanılabilir, ancak dağıtılamaz."
 
 #: src/components/v1/V1Project/Paid.tsx
-msgid "The total amount received by this project through Juicebox since it was created."
-msgstr "Oluşturulma tarihinden bu yana, bu proje tarafından Juicebox aracılığıyla alınan toplam miktar."
+msgid "The total amount received by this project through Candybox since it was created."
+msgstr "Oluşturulma tarihinden bu yana, bu proje tarafından Candybox aracılığıyla alınan toplam miktar."
 
 #: src/components/Landing/QAs.tsx
 msgid "There are unit tests written for every condition of every function in the contracts, and integration tests for every workflow that the protocol supports."
@@ -1599,8 +1599,8 @@ msgid "This project has been archived and cannot be paid."
 msgstr "Bu proje arşivlendi ve ödeme yapılamaz."
 
 #: src/components/v1/V1Project/modals/MigrateV1Pt1Modal.tsx
-msgid "This project is currently using the Juicebox V1 terminal contract. New features introduced in V1.1 allow the project owner to:"
-msgstr "Bu proje şu anda Juicebox V1 terminal sözleşmesini kullanıyor. V1.1'de tanıtılan yeni özellikler, proje sahibinin şunları yapmasına olanak tanır:"
+msgid "This project is currently using the Candybox V1 terminal contract. New features introduced in V1.1 allow the project owner to:"
+msgstr "Bu proje şu anda Candybox V1 terminal sözleşmesini kullanıyor. V1.1'de tanıtılan yeni özellikler, proje sahibinin şunları yapmasına olanak tanır:"
 
 #: src/components/shared/formItems/ProjectBondingCurveRate.tsx
 #: src/components/v1/FundingCycle/FundingCycleDetails.tsx
@@ -1612,7 +1612,7 @@ msgid "This text will be displayed to your supporters before they complete their
 msgstr "Bu metin, ödemelerini tamamlamadan önce destekçilerinize gösterilecektir."
 
 #: src/components/Landing/QAs.tsx
-msgid "This website (juicebox.money) connects to the Juicebox protocol's smart contracts, deployed on the Ethereum network. (note: anyone else can make a website that also connects to these same smart contracts. For now, don't trust any site other than this one to access the Juicebox protocol)."
+msgid "This website (candybox.money) connects to the Candybox protocol's smart contracts, deployed on the BNB Chain(BSC) network. (note: anyone else can make a website that also connects to these same smart contracts. For now, don't trust any site other than this one to access the Candybox protocol)."
 msgstr ""
 
 #: src/components/v1/V1Create/index.tsx
@@ -1664,7 +1664,7 @@ msgid "Tokens can be redeemed for a portion of a project's <0/>, letting you ben
 msgstr ""
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-msgid "Tokens can be redeemed for a portion of this project's ETH overflow, according to the bonding curve rate of the current funding cycle. <0>Tokens are burned when they are redeemed.</0>"
+msgid "Tokens can be redeemed for a portion of this project's BNB overflow, according to the bonding curve rate of the current funding cycle. <0>Tokens are burned when they are redeemed.</0>"
 msgstr ""
 
 #: src/components/v1/V1Project/modals/ProjectToolDrawerModal.tsx
@@ -1672,8 +1672,8 @@ msgid "Tools"
 msgstr "Araçlar"
 
 #: src/components/v1/V1Project/modals/DownloadParticipantsModal.tsx
-msgid "Total ETH paid"
-msgstr "Ödenen toplam ETH"
+msgid "Total BNB paid"
+msgstr "Ödenen toplam BNB"
 
 #: src/components/v1/FundingCycle/modals/WithdrawModal.tsx
 msgid "Total funds:"
@@ -1794,8 +1794,8 @@ msgid "What are the risks?"
 msgstr "Riskler nelerdir?"
 
 #: src/components/Landing/QAs.tsx
-msgid "What does Juicebox cost?"
-msgstr "Juicebox'ın maliyeti nedir?"
+msgid "What does Candybox cost?"
+msgstr "Candybox'ın maliyeti nedir?"
 
 #: src/components/Landing/QAs.tsx
 msgid "What is overflow?"
@@ -1830,16 +1830,16 @@ msgid "Whenever someone pays your project, this percentage of tokens will be res
 msgstr "Birisi projenize ödeme yaptığında bu token yüzdesi ayrılacak ve geri kalanı ödeme yapan kişiye gidecektir. Ayrılmış token'lar, varsayılan olarak proje sahibi için ayrılır ancak proje sahibi tarafından diğer cüzdan adreslerine de tahsis edilebilir. Token'lar ayrıldıktan sonra herkes onları \"basabilir\" ve bu işlem, onları amaçlanan alıcılarına dağıtır."
 
 #: src/components/Landing/QAs.tsx
-msgid "Who funds Juicebox projects?"
-msgstr "Juicebox projelerini kim finanse ediyor?"
+msgid "Who funds Candybox projects?"
+msgstr "Candybox projelerini kim finanse ediyor?"
 
 #: src/components/Landing/QAs.tsx
 msgid "Who is Peel?"
 msgstr ""
 
 #: src/components/Landing/QAs.tsx
-msgid "Why Ethereum?"
-msgstr "Neden Ethereum?"
+msgid "Why BNB Chain(BSC)?"
+msgstr "Neden BNB Chain (BSC)?"
 
 #: src/components/Landing/QAs.tsx
 msgid "Why should I want to own a project's tokens?"
@@ -1850,8 +1850,8 @@ msgid "Will it work on L2s?"
 msgstr "L2'lerde çalışacak mı?"
 
 #: src/components/Landing/index.tsx
-msgid "With Juicebox, projects are built and maintained by motivated punks getting paid transparently, and funded by a community of users and patrons who are rewarded as the projects they support succeed."
-msgstr "Juicebox ile projeler, motive olmuş punklar tarafından şeffaf bir şekilde ödenir ve destekledikleri projeler başarılı oldukça ödüllendirilen bir kullanıcı ve kullanıcı topluluğu tarafından finanse edilir ve sürdürülür."
+msgid "With Candybox, projects are built and maintained by motivated punks getting paid transparently, and funded by a community of users and patrons who are rewarded as the projects they support succeed."
+msgstr "Candybox ile projeler, motive olmuş punklar tarafından şeffaf bir şekilde ödenir ve destekledikleri projeler başarılı oldukça ödüllendirilen bir kullanıcı ve kullanıcı topluluğu tarafından finanse edilir ve sürdürülür."
 
 #: src/components/v1/FundingCycle/modals/WithdrawModal.tsx
 #: src/components/v1/V1Project/ProjectActivity/index.tsx
@@ -1879,12 +1879,12 @@ msgid "You have set a funding cycle target."
 msgstr "Bir finansman döngüsü hedefi belirlediniz."
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-msgid "You will receive {0}{1} ETH"
-msgstr "{0}{1} ETH alacaksınız"
+msgid "You will receive {0}{1} BNB"
+msgstr "{0}{1} BNB alacaksınız"
 
 #: src/components/shared/forms/TicketingForm.tsx
-msgid "You'll be able to issue ERC-20 tokens once your project contract has been deployed. Until then, the protocol will track token balances, allowing your supporters to earn tokens and redeem for overflow in the meantime."
-msgstr "Proje sözleşmeniz dağıtıldıktan sonra ERC-20 token'larını çıkarabileceksiniz. O zamana kadar protokol, token bakiyelerini takip ederek destekçilerinizin bu arada token kazanmasına ve onları taşma için kullanmasına izin verecektir."
+msgid "You'll be able to issue BEP-20 tokens once your project contract has been deployed. Until then, the protocol will track token balances, allowing your supporters to earn tokens and redeem for overflow in the meantime."
+msgstr "Proje sözleşmeniz dağıtıldıktan sonra BEP-20 token'larını çıkarabileceksiniz. O zamana kadar protokol, token bakiyelerini takip ederek destekçilerinizin bu arada token kazanmasına ve onları taşma için kullanmasına izin verecektir."
 
 #: src/components/v1/V1Project/Rewards/index.tsx
 msgid "Your balance"
@@ -1919,11 +1919,11 @@ msgid "Your project's website."
 msgstr "Projenizin web sitesi."
 
 #: src/components/v1/FundingCycle/modals/WithdrawModal.tsx
-msgid "after {0}% JBX fee"
-msgstr "%{0} JBX ücretinden sonra"
+msgid "after {0}% CBX fee"
+msgstr "%{0} CBX ücretinden sonra"
 
 #: src/components/v1/V1Project/modals/PayWarningModal.tsx
-msgid "are unaudited, and may be vulnerable to bugs or hacks. All funds moved through Juicebox could be lost or stolen. JuiceboxDAO and Peel are not liable for any losses by projects or their supporters."
+msgid "are unaudited, and may be vulnerable to bugs or hacks. All funds moved through Candybox could be lost or stolen. CandyboxDAO and Peel are not liable for any losses by projects or their supporters."
 msgstr ""
 
 #: src/components/shared/formItems/ProjectDescription.tsx
@@ -1947,8 +1947,8 @@ msgid "https://your-project.com"
 msgstr "https://your-project.com"
 
 #: src/components/shared/formItems/ProjectTwitter.tsx
-msgid "juiceboxETH"
-msgstr "juiceboxETH"
+msgid "CandyboxDAO"
+msgstr "CandyboxDAO"
 
 #: src/components/Projects/TrendingProjectCard.tsx
 msgid "last {trendingWindowDays} days"
@@ -2017,7 +2017,7 @@ msgstr ""
 
 #: src/components/v1/V1Create/ConfirmDeployProject.tsx
 #: src/components/v1/V1Project/modals/ReconfigureFCModal.tsx
-msgid "{0} after JBX fee"
+msgid "{0} after CBX fee"
 msgstr ""
 
 #: src/utils/formatDate.tsx
@@ -2049,8 +2049,8 @@ msgid "{0} left"
 msgstr "{0} kaldı"
 
 #: src/components/v1/FundingCycle/FundingCycleDetails.tsx
-msgid "{0} received per ETH paid to the treasury. This can change over time according to the discount rate and reserved tokens amount of future funding cycles."
-msgstr "Hazineye ödenen ETH başına {0} alındı. Bu, yaklaşan finansman döngülerinin indirim oranına ve ayrılmış token miktarına göre zaman içinde değişebilir."
+msgid "{0} received per BNB paid to the treasury. This can change over time according to the discount rate and reserved tokens amount of future funding cycles."
+msgstr "Hazineye ödenen BNB başına {0} alındı. Bu, yaklaşan finansman döngülerinin indirim oranına ve ayrılmış token miktarına göre zaman içinde değişebilir."
 
 #: src/components/v1/V1Project/modals/ConfirmPayOwnerModal/index.tsx
 msgid "{0} reserved"
@@ -2093,8 +2093,8 @@ msgid "{0}% to {1}"
 msgstr ""
 
 #: src/components/v1/FundingCycle/FundingCycleDetails.tsx
-msgid "{0}/ETH"
-msgstr "{0}/ETH"
+msgid "{0}/BNB"
+msgstr "{0}/BNB"
 
 #: src/components/v1/V1Project/FundingCycles/FundingHistory.tsx
 msgid "{0}/{1} withdrawn"
@@ -2129,8 +2129,8 @@ msgid "{paymentCount, plural, one {# payment} other {# payments}}"
 msgstr ""
 
 #: src/components/shared/AMMPrices/TokenAMMPriceRow.tsx
-msgid "{tokenSymbol}/ETH exchange rate on {exchangeName}."
-msgstr "{exchangeName} üzerinde {tokenSymbol}/ETH kuru."
+msgid "{tokenSymbol}/BNB exchange rate on {exchangeName}."
+msgstr "{exchangeName} üzerinde {tokenSymbol}/BNB kuru."
 
 #: src/components/v1/V1Project/Rewards/index.tsx
 msgid "{tokensLabel} are distributed to anyone who pays this project. If the project has set a funding target, tokens can be redeemed for a portion of the project's overflow whether or not they have been claimed yet."

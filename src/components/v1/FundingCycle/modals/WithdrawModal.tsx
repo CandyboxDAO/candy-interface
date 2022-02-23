@@ -114,7 +114,7 @@ export default function WithdrawModal({
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <div>
-              <Trans>JBX Fee ({fromPerbicent(currentFC.fee)}%):</Trans>
+              <Trans>CBX Fee ({fromPerbicent(currentFC.fee)}%):</Trans>
             </div>
             <div>
               -{' '}
@@ -190,7 +190,7 @@ export default function WithdrawModal({
               )}
             </span>{' '}
             <Trans>
-              after {fromPerbicent(currentFC.fee?.toString())}% JBX fee
+              after {fromPerbicent(currentFC.fee?.toString())}% CBX fee
             </Trans>
           </div>
         </div>

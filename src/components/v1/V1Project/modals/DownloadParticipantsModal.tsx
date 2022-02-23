@@ -47,7 +47,7 @@ export default function DownloadParticipantsModal({
         `Total ${tokenSymbol ?? t`token`} balance`,
         t`Staked balance`,
         t`Unstaked balance`,
-        t`Total ETH paid`,
+        t`Total BNB paid`,
         t`Last paid timestamp`,
       ], // CSV header row
     ]

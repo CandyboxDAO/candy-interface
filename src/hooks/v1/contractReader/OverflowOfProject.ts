@@ -5,7 +5,7 @@ import { bigNumbersDiff } from 'utils/bigNumbers'
 
 import useContractReader from './ContractReader'
 
-/** Returns overflow in ETH of project with `projectId`. */
+/** Returns overflow in BNB of project with `projectId`. */
 export default function useOverflowOfProject(
   projectId: BigNumberish | undefined,
   terminalName: V1TerminalName | undefined,

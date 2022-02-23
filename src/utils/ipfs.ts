@@ -46,12 +46,12 @@ type IpfsMetadataQuery = Record<
 export const IPFS_TAGS = {
   METADATA:
     process.env.NODE_ENV === 'production'
-      ? 'juicebox_project_metadata'
-      : 'DEV_juicebox_project_metadata',
+      ? 'candybox_project_metadata'
+      : 'DEV_candybox_project_metadata',
   LOGO:
     process.env.NODE_ENV === 'production'
-      ? 'juicebox_project_logo'
-      : 'DEV_juicebox_project_logo',
+      ? 'candybox_project_logo'
+      : 'DEV_candybox_project_logo',
 }
 
 const formatQueryMetadata = (metadata?: IpfsMetadataQuery) => {
@@ -155,13 +155,13 @@ export const editMetadataForCid = (
         })
     : undefined
 
-export const logoNameForHandle = (handle: string) => `juicebox-@${handle}-logo`
+export const logoNameForHandle = (handle: string) => `candybox-@${handle}-logo`
 
 export const metadataNameForHandle = (handle: string) =>
-  `juicebox-@${handle}-metadata`
+  `candybox-@${handle}-metadata`
 
 export const ipfsCidUrl = (hash: string) =>
-  'https://jbx.mypinata.cloud/ipfs/' + hash
+  'https://gateway.pinata.cloud/ipfs/' + hash
 
 export const cidFromUrl = (url: string | undefined) => url?.split('/').pop()
 
@@ -277,7 +277,7 @@ export const uploadProjectMetadata = (
       version: 3,
     },
     {
-      name: 'juicebox-project-metadata.json',
+      name: 'candybox-project-metadata.json',
       metadata: {
         tag: IPFS_TAGS.METADATA,
       },

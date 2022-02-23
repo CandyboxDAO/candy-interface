@@ -128,7 +128,7 @@ export default function Paid() {
         <span style={secondaryTextStyle}>
           <TooltipLabel
             label={t`Volume`}
-            tip={t`The total amount received by this project through Juicebox since it was created.`}
+            tip={t`The total amount received by this project through Candybox since it was created.`}
           />
         </span>
         <span style={primaryTextStyle}>
@@ -163,8 +163,8 @@ export default function Paid() {
       >
         <div style={secondaryTextStyle}>
           <TooltipLabel
-            label={t`In Juicebox`}
-            tip={t`The balance of this project in the Juicebox contract.`}
+            label={t`In Candybox`}
+            tip={t`The balance of this project in the Candybox contract.`}
           />
         </div>
 
@@ -200,7 +200,7 @@ export default function Paid() {
             <div style={secondaryTextStyle}>
               <TooltipLabel
                 label={t`Distributed`}
-                tip={t`The amount that has been distributed from the Juicebox balance in this funding cycle, out of the current funding target. No more than the funding target can be distributed in a single funding cycle—any remaining ETH in Juicebox is overflow, until the next cycle begins.`}
+                tip={t`The amount that has been distributed from the Candybox balance in this funding cycle, out of the current funding target. No more than the funding target can be distributed in a single funding cycle—any remaining BNB in Candybox is overflow, until the next cycle begins.`}
               />
             </div>
 
@@ -222,7 +222,7 @@ export default function Paid() {
             }}
           >
             <TooltipLabel
-              tip={t`The target for this funding cycle is 0, meaning all funds in Juicebox are currently considered overflow. Overflow can be redeemed by token holders, but not distributed.`}
+              tip={t`The target for this funding cycle is 0, meaning all funds in Candybox are currently considered overflow. Overflow can be redeemed by token holders, but not distributed.`}
               label={t`100% overflow`}
             />
           </div>
@@ -285,7 +285,7 @@ export default function Paid() {
               <div>
                 <p>
                   <Trans>
-                    The balance of the wallet that owns this Juicebox project.
+                    The balance of the wallet that owns this Candybox project.
                   </Trans>
                 </p>{' '}
                 <EtherscanLink value={owner} type="address" />

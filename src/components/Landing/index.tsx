@@ -52,7 +52,7 @@ export default function Landing() {
 
   const listData = [
     t`Indie artists, devs, creators`,
-    t`Ethereum protocols and DAOs`,
+    t`BSC protocols and DAOs`,
     t`Public goods and services`,
     t`Open source businesses`,
   ]
@@ -104,7 +104,7 @@ export default function Landing() {
                   rowGap: 30,
                 }}
               >
-                {bigHeader(t`Community funding for people and projects`)}
+                {bigHeader(t`Candybox make Community funding for people and projects easier`)}
                 <div
                   style={{
                     fontWeight: 500,
@@ -112,9 +112,10 @@ export default function Landing() {
                   }}
                 >
                   <Trans>
-                    Build a community around a project, fund it, and program its
+                    {/* Build a community around a project, fund it, and program its
                     spending. Light enough for a group of friends, powerful
-                    enough for a global network of anons.
+                    enough for a global network of anons. */}
+                    CandyBoxDAO is inspired by the juicebox project. Thanks the juicebox team for their great works. CandyBox's mission is to bring innovation further.
                   </Trans>
                   <br />
                   <br />
@@ -127,11 +128,11 @@ export default function Landing() {
                         borderBottom:
                           '1px solid ' + colors.stroke.action.primary,
                       }}
-                      href="https://ethereum.org/en/what-is-ethereum/"
+                      href="https://www.bnbchain.world/en/smartChain"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Ethereum
+                      BNB Chain(BSC) 
                     </a>
                     .
                   </Trans>
@@ -192,7 +193,7 @@ export default function Landing() {
                     [ThemeOption.light]: '/assets/banana-ol.png',
                   })
                 }
-                alt="Chill banana drinking juice"
+                alt="Chill banana drinking candy"
               />
             </Col>
           </Row>
@@ -216,7 +217,7 @@ export default function Landing() {
         >
           <Row gutter={60}>
             <Col xs={24} md={12} style={{ marginBottom: 100 }}>
-              {smallHeader(t`Projects using Juicebox`)}
+              {smallHeader(t`Projects using Candybox`)}
               <div style={{ marginTop: 20 }}>
                 {previewProjects ? (
                   <Grid list>
@@ -276,7 +277,7 @@ export default function Landing() {
                 {fourthCol(t`Programmable spending`, [
                   t`Commit portions of your funds to the people or projects you want to support, or the contributors you want to pay. When you get paid, so do they.`,
                 ])}
-                {fourthCol(t`ERC20 community tokens`, [
+                {fourthCol(t`BEP20 community tokens`, [
                   t`When someone pays your project, they'll receive your project's tokens in return. 
                   Tokens can be redeemed for a portion of your project's overflow funds; when you win, your community wins with you. 
                   Leverage your project's token to grant governance rights, community access, or other membership perks.`,
@@ -295,10 +296,10 @@ export default function Landing() {
                 ])}
                 <p>
                   <Trans>
-                    Note: Juicebox is new, unaudited, and not guaranteed to work
+                    Note: Candybox is new, unaudited, and not guaranteed to work
                     perfectly. Before spending money, do your own research:{' '}
                     <a
-                      href="https://discord.gg/6jXrJSyDFf"
+                      href="https://discord.gg/DCUmdwJemm"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -306,7 +307,7 @@ export default function Landing() {
                     </a>
                     ,{' '}
                     <a
-                      href="https://github.com/jbx-protocol/juice-interface"
+                      href="https://github.com/candyboxdao/candy-interface"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -348,14 +349,14 @@ export default function Landing() {
           <Row align="middle" gutter={40}>
             <Col xs={24} md={14}>
               <div style={{ display: 'grid', rowGap: 20 }}>
-                {bigHeader(t`Should you Juicebox?`)}
+                {bigHeader(t`Should you Candybox?`)}
                 <div style={{ color: colors.text.over.brand.secondary }}>
                   <p className="ol">
                     <Trans>Almost definitely.</Trans>
                   </p>
                   <p className="ol">
                     <Trans>
-                      With Juicebox, projects are built and maintained by
+                      With Candybox, projects are built and maintained by
                       motivated punks getting paid transparently, and funded by
                       a community of users and patrons who are rewarded as the
                       projects they support succeed.
@@ -440,11 +441,11 @@ export default function Landing() {
           textAlign: 'center',
         }}
       >
-        <div style={{ fontSize: 20, marginBottom: 20 }}>🧃⚡️</div>
+        {/* <div style={{ fontSize: 20, marginBottom: 20 }}>🧃⚡️</div> */}
         <h3 style={{ color: 'white', margin: 0 }}>
           <Trans>
-            Big ups to the Ethereum community for crafting the infrastructure
-            and economy to make Juicebox possible.
+            Big ups to the BNB Chain(BSC) community for crafting the infrastructure
+            and economy to make Candybox possible.
           </Trans>
         </h3>
       </div>

@@ -7,7 +7,7 @@ import { iconColors } from './icon'
 import { strokeColors } from './stroke'
 import { textColors } from './text'
 
-export const juiceThemeColors = (themeOption: ThemeOption): SemanticColors => ({
+export const candyThemeColors = (themeOption: ThemeOption): SemanticColors => ({
   background: backgroundColors[themeOption],
   text: textColors[themeOption],
   icon: iconColors[themeOption],
