@@ -57,7 +57,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
     "lint:fix": "yarn lint --fix",
     "lint-staged": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "if [[ $NODE_ENVIRONMENT != \"production\" ]]; then husky install; fi",
     "i18n:extract": "lingui extract --clean",
     "i18n:compile": "lingui compile",
     "i18n:lint": "./scripts/lint-translations.sh",
@@ -93,6 +93,7 @@
     "less": "^4.1.1",
     "lint-staged": "^12.1.1",
     "prettier": "2.4.1",
-    "source-map-explorer": "^2.5.2"
+    "source-map-explorer": "^2.5.2",
+    "husky":"^7.0.4"
   }
 }

@@ -1,4 +1,5 @@
 import { Token, WETH9, Route, Pair, CurrencyAmount } from '@sushiswap/sdk'
+
 import { Contract } from '@ethersproject/contracts'
 
 import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
@@ -8,7 +9,9 @@ import { useQuery } from 'react-query'
 import { readNetwork } from 'constants/networks'
 
 import { readProvider } from 'constants/readProvider'
+
 import { WAD_DECIMALS } from 'constants/numbers'
+
 
 /**
  * Fetches information about a pair and constructs a pair from the given two tokens.
@@ -43,6 +46,7 @@ type Props = {
 const networkId = readNetwork.chainId
 
 export function useSushiswapPriceQuery({ tokenSymbol, tokenAddress }: Props) {
+ 
   const PROJECT_TOKEN = new Token(
     networkId,
     tokenAddress,

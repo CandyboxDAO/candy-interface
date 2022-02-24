@@ -49,7 +49,7 @@ export default function FeedbackPromptModal({
         <Trans>
           Your feedback will be sent to a{' '}
           <a
-            href="https://discord.gg/NWmBtAHq"
+            href="https://discord.gg/DCUmdwJemm"
             rel="noreferrer"
             target="_blank"
           >

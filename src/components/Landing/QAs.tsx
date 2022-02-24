@@ -235,7 +235,7 @@ export default function QAs() {
     //       is the DAO that manages the candybox.money frontend interface. You can
     //       reach out to Peel either through the{' '}
     //       <a
-    //         href="https://discord.gg/XvmfY4Hkcz"
+    //         href="https://discord.gg/DCUmdwJemm"
     //         rel="noreferrer"
     //         target="_blank"
     //       >

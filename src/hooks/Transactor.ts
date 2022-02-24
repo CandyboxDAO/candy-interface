@@ -101,8 +101,11 @@ export function useTransactor({
       const notify = Notify(notifyOpts)
 
       let etherscanNetwork = ''
-      if (network.name && network.chainId > 1) {
-        etherscanNetwork = network.name + '.'
+      // if (network.name && network.chainId > 1) {
+      //   etherscanNetwork = network.name + '.'
+      // }
+      if (network.chainId === 97){
+        etherscanNetwork = "testnet."
       }
 
       let etherscanTxUrl = 'https://' + etherscanNetwork + 'bscscan.com/tx/'
@@ -151,8 +154,8 @@ export function useTransactor({
 
         // if it is a valid Notify.js network, use that, if not, just send a default notification
         const isNotifyNetwork =
-          [1, 3, 4, 5, 42, 100].indexOf(network.chainId) >= 0
-
+          [1, 3, 4, 5, 42, 100,56,97].indexOf(network.chainId) >= 0
+       
         if (isNotifyNetwork) {
           const { emitter } = notify.hash(result.hash)
           emitter.on('all', transaction => ({
