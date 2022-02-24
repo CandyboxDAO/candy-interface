@@ -29,3 +29,6 @@ src/locales/**/*.js
 
 # compiled artifacts
 src/styles/antd.css
+
+package-lock.json
+yarn.lock
